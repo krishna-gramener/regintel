@@ -3,7 +3,7 @@
     "pdfName": "018680-s074_OtherActionLtrs.pdf",
     "companyName": "CooperSurgical, Inc.",
     "drugName": "Paragard",
-    "indication": "intrauterine copper contraceptive",
+    "indication": "Women's Health",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -24,7 +24,7 @@
     "pdfName": "021164Orig1s000OtherActionLtrs.pdf",
     "companyName": "Fabre-Kramer Pharmaceuticals, Inc.",
     "drugName": "Gepirone Hydrochloride Extended Release 20mg, 40mg, 60mg, and 80mg tablets",
-    "indication": "major depressive disorder (MDD)",
+    "indication": "Neurology",
     "outcome": "not approvable",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -50,7 +50,7 @@
     "pdfName": "022075Orig1s000OtherActionLtrs.pdf",
     "companyName": "Kyowa Pharmaceutical, Inc.",
     "drugName": "istradefylline",
-    "indication": "Parkinson's Disease",
+    "indication": "Neurology",
     "outcome": "Not Approvable",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -66,7 +66,7 @@
     "pdfName": "022231Orig1s000OtherActionLtrs.pdf",
     "companyName": "Mallinckrodt Pharmaceuticals Ireland Ltd c/o Mallinckrodt Hospital Products Inc.",
     "drugName": "Terlipressin (TERLIVAZ) injection",
-    "indication": "Hepatorenal Syndrome (HRS) type I",
+    "indication": "Gastroenterology",
     "outcome": "Complete Response - Cannot approve in present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -82,7 +82,7 @@
     "pdfName": "022335Orig1s000OtherActionLtrs.pdf",
     "companyName": "Cyclomedica Australia Pty Ltd.",
     "drugName": "Technegas™ Technetium Tc-99m carbon aerosol",
-    "indication": "Pulmonary Ventilation Imaging",
+    "indication": "Pulmonary",
     "outcome": "Not Approved (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -107,7 +107,7 @@
     "pdfName": "022450Orig1s000OtherActionLtrs.pdf",
     "companyName": "Cadence Pharmaceuticals",
     "drugName": "Ofirmev (acetaminophen) Injection, 10mg/mL",
-    "indication": "Not specified in the document",
+    "indication": "Pain Management",
     "outcome": "Application cannot be approved in its present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -123,7 +123,7 @@
     "pdfName": "022517Orig1s000OtherActionLtrs.pdf",
     "companyName": "Ferring Pharmaceuticals Inc.",
     "drugName": "Nocdurna (desmopressin) Orally Disintegrating Tablets, 25 mcg and 50 mcg",
-    "indication": "nocturia due to nocturnal polyuria in adults",
+    "indication": "Urology",
     "outcome": "COMPLETE RESPONSE",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Stability & Impurities"],
@@ -139,7 +139,7 @@
     "pdfName": "022561Orig1s000OtherActionLtrs.pdf",
     "companyName": "EMD Serono, Inc.",
     "drugName": "Cladribine Tablets",
-    "indication": "Relapsing remitting multiple sclerosis (RRMS)",
+    "indication": "Neurology",
     "outcome": "Complete Response; Application cannot be approved in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Method Validation & Specifications"],
@@ -159,7 +159,7 @@
     "pdfName": "125522Orig2s000OtherActionLtrs.pdf",
     "companyName": "Amgen, Inc.",
     "drugName": "Repatha (evolocumab)",
-    "indication": "treatment of homozygous familial hypercholesterolemia (HoFH) in patients who require additional lowering of LDL-C, specifically for the 420 mg every two weeks dosing regimen, as an adjunct to diet and other LDL-lowering therapies.",
+    "indication": "Cardiovascular",
     "outcome": "Complete Response - Application cannot be approved in its present form due to insufficient clinical data and labeling issues.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -175,7 +175,7 @@
     "pdfName": "200655_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "The Feinstein Institute for Medical Research",
     "drugName": "Fluorodopa F 18 Injection",
-    "indication": "differential diagnosis of Parkinsonian syndromes",
+    "indication": "Neurology",
     "outcome": "COMPLETE RESPONSE",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -191,7 +191,7 @@
     "pdfName": "201110_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Ferring Pharmaceuticals, Inc.",
     "drugName": "progesterone vaginal ring",
-    "indication": "Assisted Reproductive Technology (ART) procedures",
+    "indication": "Women's Health",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -211,7 +211,7 @@
     "pdfName": "201848_2024_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Delcath Systems, Incorporated",
     "drugName": "Melblez Kit",
-    "indication": "hepatic-dominant metastatic ocular melanoma",
+    "indication": "Infectious Disease",
     "outcome": "Cannot approve",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -253,7 +253,7 @@
     "pdfName": "202158_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "NorthStar Medical Radioisotopes, LLC",
     "drugName": "TechneGen Generator System for Preparation of Sodium Pertechnetate Tc99m Injection, (Sodium Pertechnetate Tc99m Injection USP) Injection",
-    "indication": "Preparation of Sodium Pertechnetate Tc99m Injection (a diagnostic radiopharmaceutical)",
+    "indication": "Diagnostic Imaging",
     "outcome": "Not Approved; Complete Response Letter Issued",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -274,7 +274,7 @@
     "pdfName": "202408_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Fera Pharmaceuticals, LLC",
     "drugName": "Avaclyr (acyclovir ophthalmic ointment) 3%",
-    "indication": "acute herpetic keratitis (dendritic ulcers)",
+    "indication": "Infectious Disease",
     "outcome": "Rescind Complete Response; application now under review",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -294,7 +294,7 @@
     "pdfName": "202860_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Vero Biotech, LLC",
     "drugName": "GeNOsyl (Nitric Oxide)",
-    "indication": "Not specified in this document",
+    "indication": "Pulmonary",
     "outcome": "Not Approved (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -314,7 +314,7 @@
     "pdfName": "204017_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Agile Therapeutics, Inc.",
     "drugName": "Twirla (levonorgestrel/ethinyl estradiol) transdermal contraceptive delivery system",
-    "indication": "Contraception",
+    "indication": "Women's Health",
     "outcome": "Cannot approve",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -335,7 +335,7 @@
     "pdfName": "204311_2024_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Mylan Pharmaceuticals Inc., a Viatris Company",
     "drugName": "Abacavir and Lamivudine Tablets for Oral Suspension, 60 mg/30 mg",
-    "indication": "treatment of HIV-1 infection",
+    "indication": "Infectious Disease",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -351,7 +351,7 @@
     "pdfName": "204417Orig1s000OtherActionLtr.pdf",
     "companyName": "Sun Pharma Advanced Research Company Limited",
     "drugName": "Elepsia XR (levetiracetam) extended-release tablets, 1000 mg and 1500 mg",
-    "indication": "",
+    "indication": "Neurology",
     "outcome": "Not Approved (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -367,7 +367,7 @@
     "pdfName": "204803_2022_Orig1s000OtherActionLtrs.pdf",
     "companyName": "DURECT Corporation",
     "drugName": "POSIMIR (bupivacaine extended-release solution for instillation)",
-    "indication": "Pain management post-arthroscopic subacromial decompression surgery",
+    "indication": "Pain Management",
     "outcome": "Not Approved - Complete Response Letter",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -383,7 +383,7 @@
     "pdfName": "204957_2021_Orig1s000OtherActionLtrs.pdf",
     "companyName": "B. Braun Medical, Inc.",
     "drugName": "Acetaminophen in the PAB container, 500mg/50mL and 1000mg/100mL",
-    "indication": "Not specified in the document",
+    "indication": "Pain Management",
     "outcome": "Not Approved (Complete Response Letter)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -403,7 +403,7 @@
     "pdfName": "205054Orig1s000OtherActionLtr.pdf",
     "companyName": "GP Pharm, S.A.",
     "drugName": "Lutrate® Depot (leuprolide acetate for injection)",
-    "indication": "palliative treatment of advanced prostate cancer",
+    "indication": "Oncology",
     "outcome": "Cannot approve the application in its present form (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -424,7 +424,7 @@
     "pdfName": "205394_2023_Orig1s000OtherActionLtrs.pdf",
     "companyName": "IntelGenx Corp.",
     "drugName": "RizaFilm (rizatriptan) oral film 10 mg",
-    "indication": "Not specified",
+    "indication": "Neurology",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -448,7 +448,7 @@
     "pdfName": "205920_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Armstrong Pharmaceuticals, Inc.",
     "drugName": "Primatene Mist (epinephrine inhalation aerosol), 125 mcg per spray",
-    "indication": "temporary relief of mild symptoms of intermittent asthma in adults and adolescents 12 years of age and older",
+    "indication": "Respiratory",
     "outcome": "Application cannot be approved in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance", "Stability & Impurities"],
@@ -468,7 +468,7 @@
     "pdfName": "206089_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Clarus Therapeutics, Inc.",
     "drugName": "Jatenzo (testosterone undecanoate)",
-    "indication": "Hypogonadal men",
+    "indication": "Endocrinology",
     "outcome": "Not Approved (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Stability & Impurities", "Method Validation & Specifications"],
@@ -484,7 +484,7 @@
     "pdfName": "206185_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Sun Pharma Advanced Research Company Limited c/o Ora, Inc.",
     "drugName": "Xelpros (latanoprost ophthalmic emulsion), 0.005%",
-    "indication": "Not specified in the document",
+    "indication": "Ophthalmology",
     "outcome": "Cannot approve this application in its present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -504,7 +504,7 @@
     "pdfName": "206610_2021_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Mylan Laboratories Limited c/o Mylan Pharmaceuticals Inc.",
     "drugName": "Acetaminophen for Injection, 1 g/vial",
-    "indication": "Pain and fever relief (including proposed new dosing for neonates and infants)",
+    "indication": "Pain Management",
     "outcome": "Complete Response - Application cannot be approved in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -520,7 +520,7 @@
     "pdfName": "206927_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Dr. Reddy's Laboratories, Limited-",
     "drugName": "bortezomib for injection 3.5 mg/vial",
-    "indication": "Treatment of patients with multiple myeloma; Treatment of patients with mantle cell lymphoma who have received at least 1 prior therapy.",
+    "indication": "Oncology",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -541,7 +541,7 @@
     "pdfName": "206966_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Dr. Reddy's Laboratories, SA",
     "drugName": "Xeglyze (abametapir) Lotion, 0.74%",
-    "indication": "Not explicitly mentioned (referred to as \"the proposed indication\")",
+    "indication": "Dermatology",
     "outcome": "Cannot approve application in its present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
@@ -557,7 +557,7 @@
     "pdfName": "206968_2023_Orig1s000OtherActionLtrs.pdf",
     "companyName": "InnoPharma Licensing LLC",
     "drugName": "Acetaminophen Injection, 10 mg/mL",
-    "indication": "Pain and fever (relies on OFIRMEV NDA 022450)",
+    "indication": "Pain Management",
     "outcome": "Cannot approve this application in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -583,7 +583,7 @@
     "pdfName": "206976_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Institut Biochimique SA (IBSA)",
     "drugName": "diclofenac epolamine topical system 1.3%",
-    "indication": "Not specified in document",
+    "indication": "Pain Management",
     "outcome": "Complete Response (Cannot approve in present form)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -602,7 +602,7 @@
     "pdfName": "207962_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Scilex Pharmaceuticals, Inc.",
     "drugName": "ZTlido (lidocaine patch 1.8%)",
-    "indication": "Not specified in document",
+    "indication": "Pain Management",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -627,7 +627,7 @@
     "pdfName": "207987_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Belcher Pharmaceuticals, LLC.",
     "drugName": "Ablysinol (Dehydrated Alcohol Injection, USP)",
-    "indication": "percutaneous transluminal septal myocardial ablation (PTSMA)",
+    "indication": "Cardiovascular",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -655,7 +655,7 @@
     "pdfName": "208042_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Teva Pharmaceuticals USA",
     "drugName": "buprenorphine and naloxone sublingual film",
-    "indication": "Opioid Dependence",
+    "indication": "Substance Use Disorders",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -681,7 +681,7 @@
     "pdfName": "208193_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Metacel Pharmaceuticals, LLC",
     "drugName": "Ozobax (baclofen) oral solution 1mg/mL",
-    "indication": "Not specified in the document",
+    "indication": "Neurology",
     "outcome": "Complete Response - Application cannot be approved in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -710,7 +710,7 @@
     "pdfName": "208232_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Chiasma, Inc.",
     "drugName": "Mycapssa (octreotide)",
-    "indication": "Acromegaly",
+    "indication": "Endocrinology",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -735,7 +735,7 @@
     "pdfName": "208276_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "United Therapeutics Corporation",
     "drugName": "Implantable System for Remodulin (treprostinil)",
-    "indication": "Pulmonary Arterial Hypertension",
+    "indication": "Pulmonary",
     "outcome": "Cannot approve this application in its present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -758,7 +758,7 @@
     "pdfName": "208288_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "3M Health Care (Infection Prevention Division)",
     "drugName": "SoluPrep™ (2% chlorhexidine gluconate and 70% isopropyl alcohol), solution",
-    "indication": "Preoperative skin preparation",
+    "indication": "Infectious Disease",
     "outcome": "Cannot approve this application in its present form",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -783,7 +783,7 @@
     "pdfName": "208313_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Sun Pharmaceutical Industries Limited",
     "drugName": "INFUGEM (gemcitabine injection), 10 mg/mL",
-    "indication": "Not specified in the document",
+    "indication": "Oncology",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -805,7 +805,7 @@
     "pdfName": "208352_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Evofem, Inc.",
     "drugName": "Amphora (lactic acid 1.76 %, citric acid 1%, and potassium bitartrate 0.4%) vaginal gel",
-    "indication": "prevention of pregnancy",
+    "indication": "Women's Health",
     "outcome": "COMPLETE RESPONSE - Cannot approve in its present form due to insufficient evidence of efficacy and other deficiencies.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -834,7 +834,7 @@
     "pdfName": "208419_2021_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Actavis LLC",
     "drugName": "Pemetrexed Injection",
-    "indication": "Not specified in the document",
+    "indication": "Oncology",
     "outcome": "Not approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -858,7 +858,7 @@
     "pdfName": "208564_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "TherapeuticsMD, Inc.",
     "drugName": "estradiol vaginal insert",
-    "indication": "moderate-to-severe dyspareunia, due to menopause",
+    "indication": "Women's Health",
     "outcome": "COMPLETE RESPONSE",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -885,7 +885,7 @@
     "pdfName": "208574Orig1s000,Orig2s000OtherActionLtrs.pdf",
     "companyName": "Teva Pharmaceuticals USA Inc.",
     "drugName": "Romidepsin Injection solution, 10 mg/2 mL (5 mg/mL)",
-    "indication": "Not explicitly stated in the document.",
+    "indication": "Oncology",
     "outcome": "Cannot approve application in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -907,7 +907,7 @@
     "pdfName": "208647_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Salamandra, LLC",
     "drugName": "rosuvastatin capsules, 5mg, 10mg, 20mg, and 40mg",
-    "indication": "Not specified in document",
+    "indication": "Cardiovascular",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -933,7 +933,7 @@
     "pdfName": "208742_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Ocular Therapeutix, Inc.",
     "drugName": "DEXTENZA (dexamethasone ophthalmic insert)",
-    "indication": "intracanalicular use",
+    "indication": "Ophthalmology",
     "outcome": "Cannot approve",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -953,7 +953,7 @@
     "pdfName": "208969_2023_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Amphastar Pharmaceuticals, Inc.",
     "drugName": "Naloxone Nasal Spray",
-    "indication": "emergency treatment of opioid overdose",
+    "indication": "Substance Use Disorders",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -977,7 +977,7 @@
     "pdfName": "209128Orig1s000OtherActionLtr.pdf",
     "companyName": "AcelRx Pharmaceuticals, Inc.",
     "drugName": "DSUVIA (sufentanil sublingual tablet)",
-    "indication": "postoperative pain",
+    "indication": "Pain Management",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1002,7 +1002,7 @@
     "pdfName": "209191_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Hospira, Inc.",
     "drugName": "Bortezomib for Injection, 2.5 mg/vial",
-    "indication": "Multiple Myeloma",
+    "indication": "Oncology",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1027,7 +1027,7 @@
     "pdfName": "209311_2018_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Ironshore Pharmaceuticals & Development, Inc.",
     "drugName": "Jornay PM (methylphenidate hydrochloride) Modified Release Capsules",
-    "indication": "Attention-Deficit/Hyperactivity Disorder",
+    "indication": "Neurology",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -1047,7 +1047,7 @@
     "pdfName": "209354_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Dow Pharmaceutical Sciences, Inc.",
     "drugName": "halobetasol propionate and tazarotene lotion, 0.01%/0.045%",
-    "indication": "Not specified in the document.",
+    "indication": "Dermatology",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -1067,7 +1067,7 @@
     "pdfName": "209388_2021_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Evoke Pharma, Inc.",
     "drugName": "Gimoti (metoclopramide nasal spray)",
-    "indication": "Not explicitly stated in the document, but related to the uses of metoclopramide as a nasal spray, intended to bridge to Reglan tablet's safety and efficacy findings.",
+    "indication": "Gastroenterology",
     "outcome": "Not Approved (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1092,7 +1092,7 @@
     "pdfName": "209471_2024_Orig1s000OtherActionLtrs.pdf",
     "companyName": "AFT Pharmaceuticals, Inc.",
     "drugName": "Combogesic (acetaminophen and ibuprofen) tablets",
-    "indication": "acute pain",
+    "indication": "Pain Management",
     "outcome": "Cannot approve application in its present form (Complete Response)",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1118,7 +1118,7 @@
     "pdfName": "209510_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Acacia Pharma Ltd",
     "drugName": "Barhemsys (amisulpride) injection",
-    "indication": "Not specified in document",
+    "indication": "Psychiatry",
     "outcome": "Cannot approve this application in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1144,7 +1144,7 @@
     "pdfName": "209511_2021_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Innocoll Pharmaceuticals",
     "drugName": "bupivacaine hydrochloride collagen-matrix implants",
-    "indication": "for placement into the surgical site to produce postsurgical analgesia",
+    "indication": "Pain Management",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1169,7 +1169,7 @@
     "pdfName": "209529_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Astellas Pharma US, Inc.",
     "drugName": "solifenacin succinate oral suspension, 1 mg/mL",
-    "indication": "Not specified in the document",
+    "indication": "Urology",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1199,7 +1199,7 @@
     "pdfName": "209575_2020_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Lannett Holdings, Inc.",
     "drugName": "Cocaine Hydrochloride Topical Solution, 4% and 10 %",
-    "indication": "Not specified in the document",
+    "indication": "Pain Management",
     "outcome": "Complete Response",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1224,7 +1224,7 @@
     "pdfName": "209863_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Antares Pharma, Inc.",
     "drugName": "testosterone enanthate subcutaneous injection",
-    "indication": "testosterone replacement for hypogonadal population",
+    "indication": "Endocrinology",
     "outcome": "Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [],
@@ -1275,7 +1275,7 @@
     "pdfName": "210063_2019_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Teva Pharmaceuticals USA, Inc.",
     "drugName": "Fulvestrant Injection, 250 mg/5 mL",
-    "indication": "Not explicitly mentioned in the document",
+    "indication": "Not Specified",
     "outcome": "Complete Response / Not Approved",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [
@@ -1303,7 +1303,7 @@
     "pdfName": "210136_2024_Orig1s000OtherActionLtrs.pdf",
     "companyName": "Braeburn Inc.",
     "drugName": "BRIXADI (buprenorphine)",
-    "indication": "treatment of moderate to severe opioid use disorder",
+    "indication": "Substance Use Disorders",
     "outcome": "We cannot approve this application in its present form.",
     "issuesNoted": {
       "manufacturingAndQualityControlIssues": [

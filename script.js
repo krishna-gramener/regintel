@@ -1,3 +1,5 @@
+import { updateSankey, initSankey } from './sankey.js';
+
 let pdfData = [];
 const filters = ['companyFilter', 'drugFilter', 'indicationFilter', 'monthFilter', 'yearFilter', 'issueFilter'];
 const choicesInstances = {};
@@ -7,7 +9,12 @@ async function loadPDFData() {
   const res = await fetch('data.json');
   pdfData = await res.json();
   populateFilters(pdfData);
+  
+  // Initialize Sankey with choices instances
+  initSankey(choicesInstances);
+  
   displayResults(pdfData);
+  updateSankey(pdfData);
 }
 
 // Populate dropdown filters using unique values
@@ -94,6 +101,7 @@ function filterResults() {
   });
 
   displayResults(filtered);
+  updateSankey(filtered);
 }
 
 // Display filtered PDF results
@@ -127,6 +135,7 @@ function clearAllFilters() {
     choicesInstances[id]?.removeActiveItems();
   });
   displayResults(pdfData);
+  updateSankey(pdfData);
 }
 
 // Button handlers
