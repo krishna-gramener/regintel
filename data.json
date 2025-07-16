@@ -578,5 +578,747 @@
     },
     "month": "December",
     "year": "2020"
+  },
+  {
+    "pdfName": "206976_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Institut Biochimique SA (IBSA)",
+    "drugName": "diclofenac epolamine topical system 1.3%",
+    "indication": "Not specified in document",
+    "outcome": "Complete Response (Cannot approve in present form)",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": []
+    },
+    "month": "March",
+    "year": "2017"
+  },
+  {
+    "pdfName": "207962_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Scilex Pharmaceuticals, Inc.",
+    "drugName": "ZTlido (lidocaine patch 1.8%)",
+    "indication": "Not specified in document",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "May",
+    "year": "2016"
+  },
+  {
+    "pdfName": "207987_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Belcher Pharmaceuticals, LLC.",
+    "drugName": "Ablysinol (Dehydrated Alcohol Injection, USP)",
+    "indication": "percutaneous transluminal septal myocardial ablation (PTSMA)",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Stability & Impurities"
+      ],
+      "labelingDeficiencies": [
+        "Secondary Packaging & Instructions",
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "December",
+    "year": "2015"
+  },
+  {
+    "pdfName": "208042_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Teva Pharmaceuticals USA",
+    "drugName": "buprenorphine and naloxone sublingual film",
+    "indication": "Opioid Dependence",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "September",
+    "year": "2016"
+  },
+  {
+    "pdfName": "208193_2019_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Metacel Pharmaceuticals, LLC",
+    "drugName": "Ozobax (baclofen) oral solution 1mg/mL",
+    "indication": "Not specified in the document",
+    "outcome": "Complete Response - Application cannot be approved in its present form.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [
+        "Pediatric Formulation"
+      ],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "June",
+    "year": "2018"
+  },
+  {
+    "pdfName": "208232_2020_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Chiasma, Inc.",
+    "drugName": "Mycapssa (octreotide)",
+    "indication": "Acromegaly",
+    "outcome": "Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "April",
+    "year": "2016"
+  },
+  {
+    "pdfName": "208276_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "United Therapeutics Corporation",
+    "drugName": "Implantable System for Remodulin (treprostinil)",
+    "indication": "Pulmonary Arterial Hypertension",
+    "outcome": "Cannot approve this application in its present form",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "June",
+    "year": "2017"
+  },
+  {
+    "pdfName": "208288_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "3M Health Care (Infection Prevention Division)",
+    "drugName": "SoluPrep™ (2% chlorhexidine gluconate and 70% isopropyl alcohol), solution",
+    "indication": "Preoperative skin preparation",
+    "outcome": "Cannot approve this application in its present form",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "September",
+    "year": "2017"
+  },
+  {
+    "pdfName": "208313_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Sun Pharmaceutical Industries Limited",
+    "drugName": "INFUGEM (gemcitabine injection), 10 mg/mL",
+    "indication": "Not specified in the document",
+    "outcome": "Cannot approve this application in its present form (Complete Response)",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement",
+        "Packaging & Container Closure"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": []
+    },
+    "month": "May",
+    "year": "2017"
+  },
+  {
+    "pdfName": "208352_2020_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Evofem, Inc.",
+    "drugName": "Amphora (lactic acid 1.76 %, citric acid 1%, and potassium bitartrate 0.4%) vaginal gel",
+    "indication": "prevention of pregnancy",
+    "outcome": "COMPLETE RESPONSE - Cannot approve in its present form due to insufficient evidence of efficacy and other deficiencies.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure",
+        "Stability & Impurities"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "April",
+    "year": "2016"
+  },
+  {
+    "pdfName": "208419_2021_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Actavis LLC",
+    "drugName": "Pemetrexed Injection",
+    "indication": "Not specified in the document",
+    "outcome": "Not approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": []
+    },
+    "month": "June",
+    "year": "2018"
+  },
+  {
+    "pdfName": "208564_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "TherapeuticsMD, Inc.",
+    "drugName": "estradiol vaginal insert",
+    "indication": "moderate-to-severe dyspareunia, due to menopause",
+    "outcome": "COMPLETE RESPONSE",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Method Validation & Specifications"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "May",
+    "year": "2017"
+  },
+  {
+    "pdfName": "208574Orig1s000,Orig2s000OtherActionLtrs.pdf",
+    "companyName": "Teva Pharmaceuticals USA Inc.",
+    "drugName": "Romidepsin Injection solution, 10 mg/2 mL (5 mg/mL)",
+    "indication": "Not explicitly stated in the document.",
+    "outcome": "Cannot approve application in its present form.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "November",
+    "year": "2019"
+  },
+  {
+    "pdfName": "208647_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Salamandra, LLC",
+    "drugName": "rosuvastatin capsules, 5mg, 10mg, 20mg, and 40mg",
+    "indication": "Not specified in document",
+    "outcome": "Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "June",
+    "year": "2016"
+  },
+  {
+    "pdfName": "208742_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Ocular Therapeutix, Inc.",
+    "drugName": "DEXTENZA (dexamethasone ophthalmic insert)",
+    "indication": "intracanalicular use",
+    "outcome": "Cannot approve",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "July",
+    "year": "2017"
+  },
+  {
+    "pdfName": "208969_2023_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Amphastar Pharmaceuticals, Inc.",
+    "drugName": "Naloxone Nasal Spray",
+    "indication": "emergency treatment of opioid overdose",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications"
+      ],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [
+        "Pediatric Formulation"
+      ],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "February",
+    "year": "2017"
+  },
+  {
+    "pdfName": "209128Orig1s000OtherActionLtr.pdf",
+    "companyName": "AcelRx Pharmaceuticals, Inc.",
+    "drugName": "DSUVIA (sufentanil sublingual tablet)",
+    "indication": "postoperative pain",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "October",
+    "year": "2017"
+  },
+  {
+    "pdfName": "209191_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Hospira, Inc.",
+    "drugName": "Bortezomib for Injection, 2.5 mg/vial",
+    "indication": "Multiple Myeloma",
+    "outcome": "Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Method Validation & Specifications"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "February",
+    "year": "2018"
+  },
+  {
+    "pdfName": "209311_2018_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Ironshore Pharmaceuticals & Development, Inc.",
+    "drugName": "Jornay PM (methylphenidate hydrochloride) Modified Release Capsules",
+    "indication": "Attention-Deficit/Hyperactivity Disorder",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [
+        "Pediatric Formulation"
+      ],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "July",
+    "year": "2017"
+  },
+  {
+    "pdfName": "209354_2019_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Dow Pharmaceutical Sciences, Inc.",
+    "drugName": "halobetasol propionate and tazarotene lotion, 0.01%/0.045%",
+    "indication": "Not specified in the document.",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [],
+      "labelingDeficiencies": [],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "June",
+    "year": "2018"
+  },
+  {
+    "pdfName": "209388_2021_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Evoke Pharma, Inc.",
+    "drugName": "Gimoti (metoclopramide nasal spray)",
+    "indication": "Not explicitly stated in the document, but related to the uses of metoclopramide as a nasal spray, intended to bridge to Reglan tablet's safety and efficacy findings.",
+    "outcome": "Not Approved (Complete Response)",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": []
+    },
+    "month": "April",
+    "year": "2019"
+  },
+  {
+    "pdfName": "209471_2024_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "AFT Pharmaceuticals, Inc.",
+    "drugName": "Combogesic (acetaminophen and ibuprofen) tablets",
+    "indication": "acute pain",
+    "outcome": "Cannot approve application in its present form (Complete Response)",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "May",
+    "year": "2020"
+  },
+  {
+    "pdfName": "209510_2020_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Acacia Pharma Ltd",
+    "drugName": "Barhemsys (amisulpride) injection",
+    "indication": "Not specified in document",
+    "outcome": "Cannot approve this application in its present form.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "May",
+    "year": "2019"
+  },
+  {
+    "pdfName": "209511_2021_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Innocoll Pharmaceuticals",
+    "drugName": "bupivacaine hydrochloride collagen-matrix implants",
+    "indication": "for placement into the surgical site to produce postsurgical analgesia",
+    "outcome": "Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "November",
+    "year": "2018"
+  },
+  {
+    "pdfName": "209529_2020_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Astellas Pharma US, Inc.",
+    "drugName": "solifenacin succinate oral suspension, 1 mg/mL",
+    "indication": "Not specified in the document",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Stability & Impurities"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [
+        "Pediatric Formulation"
+      ],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "August",
+    "year": "2017"
+  },
+  {
+    "pdfName": "209575_2020_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Lannett Holdings, Inc.",
+    "drugName": "Cocaine Hydrochloride Topical Solution, 4% and 10 %",
+    "indication": "Not specified in the document",
+    "outcome": "Complete Response",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "July",
+    "year": "2018"
+  },
+  {
+    "pdfName": "209863_2019_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Antares Pharma, Inc.",
+    "drugName": "testosterone enanthate subcutaneous injection",
+    "indication": "testosterone replacement for hypogonadal population",
+    "outcome": "Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Readability & Layout",
+        "Content Accuracy & Placement",
+        "Secondary Packaging & Instructions"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "October",
+    "year": "2017"
+  },
+  {
+    "pdfName": "209988_2023_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "scPharmaceuticals Services, Inc",
+    "drugName": "Furoscix™ (Furosemide)",
+    "indication": "congestive heart failure",
+    "outcome": "Cannot approve application in its present form.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "December",
+    "year": "2020"
+  },
+  {
+    "pdfName": "210063_2019_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Teva Pharmaceuticals USA, Inc.",
+    "drugName": "Fulvestrant Injection, 250 mg/5 mL",
+    "indication": "Not explicitly mentioned in the document",
+    "outcome": "Complete Response / Not Approved",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Stability & Impurities",
+        "Process & Facility Compliance",
+        "Method Validation & Specifications",
+        "Packaging & Container Closure"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance",
+        "Content Accuracy & Placement"
+      ],
+      "regulatoryDocumentationErrors": [
+        "Submission Gaps"
+      ],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "October",
+    "year": "2017"
+  },
+  {
+    "pdfName": "210136_2024_Orig1s000OtherActionLtrs.pdf",
+    "companyName": "Braeburn Inc.",
+    "drugName": "BRIXADI (buprenorphine)",
+    "indication": "treatment of moderate to severe opioid use disorder",
+    "outcome": "We cannot approve this application in its present form.",
+    "issuesNoted": {
+      "manufacturingAndQualityControlIssues": [
+        "Process & Facility Compliance"
+      ],
+      "labelingDeficiencies": [
+        "Format & Regulatory Compliance"
+      ],
+      "regulatoryDocumentationErrors": [],
+      "clinicalDeficiencies": [],
+      "bioequivalenceIssues": [
+        "Not applicable"
+      ]
+    },
+    "month": "December",
+    "year": "2021"
   }
 ]
