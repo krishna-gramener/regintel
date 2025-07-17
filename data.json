@@ -5,18 +5,6 @@
     "drugName": "Paragard",
     "indication": "Women's Health",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -53,23 +41,6 @@
     "drugName": "Gepirone Hydrochloride Extended Release 20mg, 40mg, 60mg, and 80mg tablets",
     "indication": "Neurology",
     "outcome": "not approvable",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -111,13 +82,6 @@
     "drugName": "istradefylline",
     "indication": "Neurology",
     "outcome": "Not Approvable",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -149,13 +113,6 @@
     "drugName": "Terlipressin (TERLIVAZ) injection",
     "indication": "Gastroenterology",
     "outcome": "Complete Response - Cannot approve in present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Packaging & Container Closure"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -187,22 +144,6 @@
     "drugName": "Technegas™ Technetium Tc-99m carbon aerosol",
     "indication": "Pulmonary",
     "outcome": "Not Approved (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": ["Pediatric Formulation"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -243,13 +184,6 @@
     "drugName": "Ofirmev (acetaminophen) Injection, 10mg/mL",
     "indication": "Pain Management",
     "outcome": "Application cannot be approved in its present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -281,13 +215,6 @@
     "drugName": "Nocdurna (desmopressin) Orally Disintegrating Tablets, 25 mcg and 50 mcg",
     "indication": "Urology",
     "outcome": "COMPLETE RESPONSE",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Stability & Impurities"],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -319,17 +246,6 @@
     "drugName": "Cladribine Tablets",
     "indication": "Neurology",
     "outcome": "Complete Response; Application cannot be approved in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Method Validation & Specifications"],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": ["Not applicable"],
-      "clinicalDeficiencies": ["Not applicable"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -365,13 +281,6 @@
     "drugName": "Repatha (evolocumab)",
     "indication": "Cardiovascular",
     "outcome": "Complete Response - Application cannot be approved in its present form due to insufficient clinical data and labeling issues.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -403,13 +312,6 @@
     "drugName": "Fluorodopa F 18 Injection",
     "indication": "Neurology",
     "outcome": "COMPLETE RESPONSE",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -441,17 +343,6 @@
     "drugName": "progesterone vaginal ring",
     "indication": "Women's Health",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": ["Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": ["Not applicable"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -487,23 +378,6 @@
     "drugName": "Melblez Kit",
     "indication": "Infectious Disease",
     "outcome": "Cannot approve",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -545,13 +419,6 @@
     "drugName": "mannitol inhalation powder, 40 mg",
     "indication": "Cystic Fibrosis",
     "outcome": "Cannot approve application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": ["Pediatric Formulation"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -583,18 +450,6 @@
     "drugName": "TechneGen Generator System for Preparation of Sodium Pertechnetate Tc99m Injection, (Sodium Pertechnetate Tc99m Injection USP) Injection",
     "indication": "Diagnostic Imaging",
     "outcome": "Not Approved; Complete Response Letter Issued",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": ["Content Accuracy & Placement", "Secondary Packaging & Instructions"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -631,17 +486,6 @@
     "drugName": "Avaclyr (acyclovir ophthalmic ointment) 3%",
     "indication": "Infectious Disease",
     "outcome": "Rescind Complete Response; application now under review",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Method Validation & Specifications",
-        "Process & Facility Compliance",
-        "Stability & Impurities"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -677,17 +521,6 @@
     "drugName": "GeNOsyl (Nitric Oxide)",
     "indication": "Pulmonary",
     "outcome": "Not Approved (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Secondary Packaging & Instructions"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -723,18 +556,6 @@
     "drugName": "Twirla (levonorgestrel/ethinyl estradiol) transdermal contraceptive delivery system",
     "indication": "Women's Health",
     "outcome": "Cannot approve",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": ["Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": ["Pediatric Formulation"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -771,13 +592,6 @@
     "drugName": "Abacavir and Lamivudine Tablets for Oral Suspension, 60 mg/30 mg",
     "indication": "Infectious Disease",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -809,13 +623,6 @@
     "drugName": "Elepsia XR (levetiracetam) extended-release tablets, 1000 mg and 1500 mg",
     "indication": "Neurology",
     "outcome": "Not Approved (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Content Accuracy & Placement", "Format & Regulatory Compliance"],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -847,13 +654,6 @@
     "drugName": "POSIMIR (bupivacaine extended-release solution for instillation)",
     "indication": "Pain Management",
     "outcome": "Not Approved - Complete Response Letter",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -885,17 +685,6 @@
     "drugName": "Acetaminophen in the PAB container, 500mg/50mL and 1000mg/100mL",
     "indication": "Pain Management",
     "outcome": "Not Approved (Complete Response Letter)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Packaging & Container Closure"
-      ],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": ["Not applicable"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -931,18 +720,6 @@
     "drugName": "Lutrate® Depot (leuprolide acetate for injection)",
     "indication": "Oncology",
     "outcome": "Cannot approve the application in its present form (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": ["Format & Regulatory Compliance"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -979,21 +756,6 @@
     "drugName": "RizaFilm (rizatriptan) oral film 10 mg",
     "indication": "Neurology",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": ["Pediatric Formulation"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1033,17 +795,6 @@
     "drugName": "Primatene Mist (epinephrine inhalation aerosol), 125 mcg per spray",
     "indication": "Respiratory",
     "outcome": "Application cannot be approved in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance", "Stability & Impurities"],
-      "labelingDeficiencies": [
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Format & Regulatory Compliance"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1079,13 +830,6 @@
     "drugName": "Jatenzo (testosterone undecanoate)",
     "indication": "Endocrinology",
     "outcome": "Not Approved (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Stability & Impurities", "Method Validation & Specifications"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1117,17 +861,6 @@
     "drugName": "Xelpros (latanoprost ophthalmic emulsion), 0.005%",
     "indication": "Ophthalmology",
     "outcome": "Cannot approve this application in its present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance",
-        "Stability & Impurities",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": ["Not applicable"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1163,13 +896,6 @@
     "drugName": "Acetaminophen for Injection, 1 g/vial",
     "indication": "Pain Management",
     "outcome": "Complete Response - Application cannot be approved in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance", "Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": ["Pediatric Formulation"],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1201,18 +927,6 @@
     "drugName": "bortezomib for injection 3.5 mg/vial",
     "indication": "Oncology",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": ["Content Accuracy & Placement"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1249,13 +963,6 @@
     "drugName": "Xeglyze (abametapir) Lotion, 0.74%",
     "indication": "Dermatology",
     "outcome": "Cannot approve application in its present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": ["Process & Facility Compliance"],
-      "labelingDeficiencies": ["Format & Regulatory Compliance"],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1287,23 +994,6 @@
     "drugName": "Acetaminophen Injection, 10 mg/mL",
     "indication": "Pain Management",
     "outcome": "Cannot approve this application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": ["Submission Gaps"],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1345,16 +1035,6 @@
     "drugName": "diclofenac epolamine topical system 1.3%",
     "indication": "Pain Management",
     "outcome": "Complete Response (Cannot approve in present form)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": []
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1389,22 +1069,6 @@
     "drugName": "ZTlido (lidocaine patch 1.8%)",
     "indication": "Pain Management",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1441,25 +1105,6 @@
     "drugName": "Ablysinol (Dehydrated Alcohol Injection, USP)",
     "indication": "Cardiovascular",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Stability & Impurities"
-      ],
-      "labelingDeficiencies": [
-        "Secondary Packaging & Instructions",
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1499,23 +1144,6 @@
     "drugName": "buprenorphine and naloxone sublingual film",
     "indication": "Substance Use Disorders",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1551,26 +1179,6 @@
     "drugName": "Ozobax (baclofen) oral solution 1mg/mL",
     "indication": "Neurology",
     "outcome": "Complete Response - Application cannot be approved in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [
-        "Pediatric Formulation"
-      ],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1609,22 +1217,6 @@
     "drugName": "Mycapssa (octreotide)",
     "indication": "Endocrinology",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1659,18 +1251,6 @@
     "drugName": "Implantable System for Remodulin (treprostinil)",
     "indication": "Pulmonary",
     "outcome": "Cannot approve this application in its present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": ["Not applicable"]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1705,22 +1285,6 @@
     "drugName": "SoluPrep™ (2% chlorhexidine gluconate and 70% isopropyl alcohol), solution",
     "indication": "Infectious Disease",
     "outcome": "Cannot approve this application in its present form",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1757,19 +1321,6 @@
     "drugName": "INFUGEM (gemcitabine injection), 10 mg/mL",
     "indication": "Oncology",
     "outcome": "Cannot approve this application in its present form (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Packaging & Container Closure"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": []
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1805,26 +1356,6 @@
     "drugName": "Amphora (lactic acid 1.76 %, citric acid 1%, and potassium bitartrate 0.4%) vaginal gel",
     "indication": "Women's Health",
     "outcome": "COMPLETE RESPONSE - Cannot approve in its present form due to insufficient evidence of efficacy and other deficiencies.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure",
-        "Stability & Impurities"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1865,21 +1396,6 @@
     "drugName": "Pemetrexed Injection",
     "indication": "Oncology",
     "outcome": "Not approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": []
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1919,24 +1435,6 @@
     "drugName": "estradiol vaginal insert",
     "indication": "Women's Health",
     "outcome": "COMPLETE RESPONSE",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -1975,19 +1473,6 @@
     "drugName": "Romidepsin Injection solution, 10 mg/2 mL (5 mg/mL)",
     "indication": "Oncology",
     "outcome": "Cannot approve application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2019,23 +1504,6 @@
     "drugName": "rosuvastatin capsules, 5mg, 10mg, 20mg, and 40mg",
     "indication": "Cardiovascular",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2071,17 +1539,6 @@
     "drugName": "DEXTENZA (dexamethasone ophthalmic insert)",
     "indication": "Ophthalmology",
     "outcome": "Cannot approve",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2113,21 +1570,6 @@
     "drugName": "Naloxone Nasal Spray",
     "indication": "Substance Use Disorders",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [
-        "Pediatric Formulation"
-      ],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2163,22 +1605,6 @@
     "drugName": "DSUVIA (sufentanil sublingual tablet)",
     "indication": "Pain Management",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2215,22 +1641,6 @@
     "drugName": "Bortezomib for Injection, 2.5 mg/vial",
     "indication": "Oncology",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Method Validation & Specifications"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2269,17 +1679,6 @@
     "drugName": "Jornay PM (methylphenidate hydrochloride) Modified Release Capsules",
     "indication": "Neurology",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [
-        "Pediatric Formulation"
-      ],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2311,17 +1710,6 @@
     "drugName": "halobetasol propionate and tazarotene lotion, 0.01%/0.045%",
     "indication": "Dermatology",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2353,22 +1741,6 @@
     "drugName": "Gimoti (metoclopramide nasal spray)",
     "indication": "Gastroenterology",
     "outcome": "Not Approved (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": []
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2405,23 +1777,6 @@
     "drugName": "Combogesic (acetaminophen and ibuprofen) tablets",
     "indication": "Pain Management",
     "outcome": "Cannot approve application in its present form (Complete Response)",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2457,23 +1812,6 @@
     "drugName": "Barhemsys (amisulpride) injection",
     "indication": "Psychiatry",
     "outcome": "Cannot approve this application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2509,22 +1847,6 @@
     "drugName": "bupivacaine hydrochloride collagen-matrix implants",
     "indication": "Pain Management",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2563,27 +1885,6 @@
     "drugName": "solifenacin succinate oral suspension, 1 mg/mL",
     "indication": "Urology",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Stability & Impurities"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [
-        "Pediatric Formulation"
-      ],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2623,22 +1924,6 @@
     "drugName": "Cocaine Hydrochloride Topical Solution, 4% and 10 %",
     "indication": "Pain Management",
     "outcome": "Complete Response",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2673,20 +1958,6 @@
     "drugName": "testosterone enanthate subcutaneous injection",
     "indication": "Endocrinology",
     "outcome": "Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Readability & Layout",
-        "Content Accuracy & Placement",
-        "Secondary Packaging & Instructions"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2723,25 +1994,6 @@
     "drugName": "Furoscix™ (Furosemide)",
     "indication": "congestive heart failure",
     "outcome": "Cannot approve application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2781,25 +2033,6 @@
     "drugName": "Fulvestrant Injection, 250 mg/5 mL",
     "indication": "Not Specified",
     "outcome": "Complete Response / Not Approved",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Stability & Impurities",
-        "Process & Facility Compliance",
-        "Method Validation & Specifications",
-        "Packaging & Container Closure"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance",
-        "Content Accuracy & Placement"
-      ],
-      "regulatoryDocumentationErrors": [
-        "Submission Gaps"
-      ],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
@@ -2839,19 +2072,6 @@
     "drugName": "BRIXADI (buprenorphine)",
     "indication": "Substance Use Disorders",
     "outcome": "We cannot approve this application in its present form.",
-    "issuesNoted": {
-      "manufacturingAndQualityControlIssues": [
-        "Process & Facility Compliance"
-      ],
-      "labelingDeficiencies": [
-        "Format & Regulatory Compliance"
-      ],
-      "regulatoryDocumentationErrors": [],
-      "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
-    },
     "issueCategories": [
       {
         "category": "Manufacturing and Quality Control Issues (CMC)",
