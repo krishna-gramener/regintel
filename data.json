@@ -17,6 +17,33 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2023"
   },
@@ -43,6 +70,38 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "November",
     "year": "2007"
   },
@@ -59,6 +118,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2008"
   },
@@ -75,6 +156,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Packaging & Container Closure"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2022"
   },
@@ -100,6 +203,37 @@
       "clinicalDeficiencies": ["Pediatric Formulation"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2021"
   },
@@ -116,6 +250,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2010"
   },
@@ -132,6 +288,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Stability & Impurities"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "January",
     "year": "2015"
   },
@@ -152,6 +330,32 @@
       "clinicalDeficiencies": ["Not applicable"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Method Validation & Specifications"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Not applicable"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Not applicable"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2011"
   },
@@ -168,6 +372,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "August",
     "year": "2015"
   },
@@ -184,6 +410,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "September",
     "year": "2016"
   },
@@ -204,6 +452,32 @@
       "clinicalDeficiencies": ["Not applicable"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Not applicable"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "November",
     "year": "2016"
   },
@@ -230,6 +504,38 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "September",
     "year": "2013"
   },
@@ -246,6 +552,28 @@
       "clinicalDeficiencies": ["Pediatric Formulation"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2019"
   },
@@ -267,6 +595,33 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement", "Secondary Packaging & Instructions"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Applicable"]
+      }
+    ],
     "month": "November",
     "year": "2013"
   },
@@ -287,6 +642,32 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Method Validation & Specifications",
+          "Process & Facility Compliance",
+          "Stability & Impurities"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "March",
     "year": "2019"
   },
@@ -307,6 +688,32 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Secondary Packaging & Instructions"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "January",
     "year": "2019"
   },
@@ -328,6 +735,33 @@
       "clinicalDeficiencies": ["Pediatric Formulation"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2017"
   },
@@ -344,6 +778,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "January",
     "year": "2023"
   },
@@ -360,6 +816,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement", "Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "March",
     "year": "2017"
   },
@@ -376,6 +854,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2014"
   },
@@ -396,6 +896,32 @@
       "clinicalDeficiencies": ["Not applicable"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Not applicable"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "April",
     "year": "2020"
   },
@@ -417,6 +943,33 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2015"
   },
@@ -441,6 +994,36 @@
       "clinicalDeficiencies": ["Pediatric Formulation"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "March",
     "year": "2020"
   },
@@ -461,6 +1044,32 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance", "Stability & Impurities"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Format & Regulatory Compliance"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2016"
   },
@@ -477,6 +1086,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Stability & Impurities", "Method Validation & Specifications"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "March",
     "year": "2018"
   },
@@ -497,6 +1128,32 @@
       "clinicalDeficiencies": ["Not applicable"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Process & Facility Compliance",
+          "Stability & Impurities",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Not applicable"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2016"
   },
@@ -513,6 +1170,28 @@
       "clinicalDeficiencies": ["Pediatric Formulation"],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance", "Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2019"
   },
@@ -534,6 +1213,33 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2016"
   },
@@ -550,6 +1256,28 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "August",
     "year": "2016"
   },
@@ -576,6 +1304,38 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2020"
   },
@@ -595,6 +1355,31 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": []
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": []
+      }
+    ],
     "month": "March",
     "year": "2017"
   },
@@ -620,6 +1405,33 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2016"
   },
@@ -648,6 +1460,36 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Stability & Impurities"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Secondary Packaging & Instructions",
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2015"
   },
@@ -674,6 +1516,32 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "September",
     "year": "2016"
   },
@@ -703,6 +1571,35 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2018"
   },
@@ -728,6 +1625,31 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "April",
     "year": "2016"
   },
@@ -747,10 +1669,33 @@
         "Submission Gaps"
       ],
       "clinicalDeficiencies": [],
-      "bioequivalenceIssues": [
-        "Not applicable"
-      ]
+      "bioequivalenceIssues": ["Not applicable"]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2017"
   },
@@ -776,6 +1721,33 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "September",
     "year": "2017"
   },
@@ -798,6 +1770,32 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": []
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": []
+      }
+    ],
     "month": "May",
     "year": "2017"
   },
@@ -827,6 +1825,37 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure",
+          "Stability & Impurities"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "April",
     "year": "2016"
   },
@@ -851,6 +1880,36 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": []
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": []
+      }
+    ],
     "month": "June",
     "year": "2018"
   },
@@ -878,6 +1937,35 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2017"
   },
@@ -900,6 +1988,28 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "November",
     "year": "2019"
   },
@@ -926,6 +2036,32 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2016"
   },
@@ -946,6 +2082,28 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "July",
     "year": "2017"
   },
@@ -970,6 +2128,32 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2017"
   },
@@ -995,6 +2179,33 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Packaging & Container Closure"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "October",
     "year": "2017"
   },
@@ -1020,6 +2231,35 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Method Validation & Specifications"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "February",
     "year": "2018"
   },
@@ -1040,6 +2280,28 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "July",
     "year": "2017"
   },
@@ -1060,6 +2322,28 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "June",
     "year": "2018"
   },
@@ -1085,6 +2369,33 @@
       "clinicalDeficiencies": [],
       "bioequivalenceIssues": []
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": []
+      }
+    ],
     "month": "April",
     "year": "2019"
   },
@@ -1111,6 +2422,32 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2020"
   },
@@ -1137,6 +2474,32 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "May",
     "year": "2019"
   },
@@ -1162,6 +2525,35 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "November",
     "year": "2018"
   },
@@ -1192,6 +2584,36 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Stability & Impurities"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": ["Pediatric Formulation"]
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "August",
     "year": "2017"
   },
@@ -1217,6 +2639,31 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Content Accuracy & Placement"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "July",
     "year": "2018"
   },
@@ -1240,6 +2687,33 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": []
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Readability & Layout",
+          "Content Accuracy & Placement",
+          "Secondary Packaging & Instructions"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "October",
     "year": "2017"
   },
@@ -1268,6 +2742,36 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2020"
   },
@@ -1296,6 +2800,36 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": [
+          "Stability & Impurities",
+          "Process & Facility Compliance",
+          "Method Validation & Specifications",
+          "Packaging & Container Closure"
+        ]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": [
+          "Format & Regulatory Compliance",
+          "Content Accuracy & Placement"
+        ]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": ["Submission Gaps"]
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "October",
     "year": "2017"
   },
@@ -1318,6 +2852,28 @@
         "Not applicable"
       ]
     },
+    "issueCategories": [
+      {
+        "category": "Manufacturing and Quality Control Issues (CMC)",
+        "subcategories": ["Process & Facility Compliance"]
+      },
+      {
+        "category": "Labeling Deficiencies",
+        "subcategories": ["Format & Regulatory Compliance"]
+      },
+      {
+        "category": "Regulatory Documentation Errors",
+        "subcategories": []
+      },
+      {
+        "category": "Clinical Deficiencies",
+        "subcategories": []
+      },
+      {
+        "category": "Bioequivalence Issues",
+        "subcategories": ["Not applicable"]
+      }
+    ],
     "month": "December",
     "year": "2021"
   }

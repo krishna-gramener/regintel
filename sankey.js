@@ -121,7 +121,7 @@ export function updateSankey(data) {
     .attr("y", (d) => (d.y1 + d.y0) / 2)
     .attr("dy", "0.35em")
     .attr("text-anchor", (d) => (d.x0 < width / 2 ? "start" : "end"))
-    .text((d) => d.name.slice(0,20) + (d.name.length > 20 ? '...' : ''))
+    .text((d) => d.name)
     .style("font-size", "10px")
     .style("fill", "#666")
     .style("cursor", "pointer")

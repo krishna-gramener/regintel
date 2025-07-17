@@ -61,13 +61,22 @@ function populateFilters(data) {
           choicesInstances[id].setChoices(options, 'value', 'label', true);
         }
       } else {
+        // For issue filter, use the category names from issueCategories
+        const issueCategories = unique(data.flatMap(item => item.issueCategories?.map(cat => cat.category) || [])).sort();
+        const options = issueCategories.map(value => ({ value, label: value }));
+        
         if (!choicesInstances[id]) {
           choicesInstances[id] = new Choices(select, {
             removeItemButton: true,
             searchEnabled: true,
             shouldSort: false,
+            placeholderValue: 'Select issues',
+            noResultsText: 'No match found',
           });
+        } else {
+          choicesInstances[id].clearChoices();
         }
+        choicesInstances[id].setChoices(options, 'value', 'label', true);
       }
     });
   }
@@ -96,7 +105,7 @@ function filterResults() {
       (indications.length === 0 || indications.includes(item.indication)) &&
       (months.length === 0 || months.includes(item.month)) &&
       (years.length === 0 || years.includes(item.year.toString())) &&
-      (issues.length === 0 || issues.some(issue => item.issuesNoted?.[issue]?.length > 0))
+      (issues.length === 0 || issues.some(issue => item.issueCategories?.some(cat => cat.category === issue && cat.subcategories.length > 0)))
     );
   });
 
