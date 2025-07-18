@@ -1,116 +1,240 @@
-import { updateSankey, initSankey } from './sankey.js';
+import { updateSankey} from './sankey.js';
 
 let pdfData = [];
-const filters = ['companyFilter', 'drugFilter', 'indicationFilter', 'monthFilter', 'yearFilter', 'issueFilter'];
-const choicesInstances = {};
+const filters = ['companyFilter', 'categoryFilter', 'subcategoryFilter', 'indicationFilter', 'monthFilter', 'yearFilter'];
+
+// Track selected values for each filter
+window.selectedValues = {
+  companyFilter: new Set(),
+  categoryFilter: new Set(),
+  subcategoryFilter: new Set(),
+  indicationFilter: new Set(),
+  monthFilter: new Set(),
+  yearFilter: new Set()
+};
+const selectedValues = window.selectedValues;
+
+// Function to create a checkbox option
+function createCheckboxOption(value, containerId) {
+  const div = document.createElement('div');
+  div.className = 'px-3 py-1';
+  
+  const formCheck = document.createElement('div');
+  formCheck.className = 'form-check';
+  
+  const input = document.createElement('input');
+  input.className = 'form-check-input';
+  input.type = 'checkbox';
+  input.value = value;
+  input.id = `${containerId}-${value.replace(/\s+/g, '-').toLowerCase()}`;
+  
+  const label = document.createElement('label');
+  label.className = 'form-check-label';
+  label.htmlFor = input.id;
+  label.textContent = value;
+  
+  formCheck.appendChild(input);
+  formCheck.appendChild(label);
+  div.appendChild(formCheck);
+  
+  return div;
+}
+
+// Function to update dropdown button text
+function updateDropdownText(filterId) {
+  const selected = selectedValues[filterId];
+  const button = document.querySelector(`#${filterId} button`);
+  const baseText = button.textContent.split('(')[0].trim();
+  
+  if (selected.size === 0) {
+    button.textContent = baseText;
+  } else {
+    button.textContent = `${baseText} (${selected.size})`;
+  }
+}
 
 // Fetch and load PDF metadata
 async function loadPDFData() {
-  const res = await fetch('data.json');
-  pdfData = await res.json();
-  populateFilters(pdfData);
-  
-  // Initialize Sankey with choices instances
-  initSankey(choicesInstances);
-  
-  displayResults(pdfData);
-  updateSankey(pdfData);
+  try {
+    const res = await fetch('data.json');
+    pdfData = await res.json();
+    
+    populateFilters(pdfData);
+    
+    displayResults(pdfData);
+    updateSankey(pdfData);
+  } catch (error) {
+    console.error('Error during initialization:', error);
+    document.getElementById('results').innerHTML = `
+      <div class="alert alert-danger">
+        Error initializing application. Please refresh the page.
+        ${error.message}
+      </div>
+    `;
+  }
 }
 
 // Populate dropdown filters using unique values
 function populateFilters(data) {
-    const unique = (arr) => [...new Set(arr)];
-  
-    const MONTH_ORDER = [
-      'January', 'February', 'March', 'April', 'May', 'June',
-      'July', 'August', 'September', 'October', 'November', 'December'
-    ];
-  
-    const sortMonths = (months) => {
-      return MONTH_ORDER.filter(month => months.includes(month));
-    };
-  
-    const fieldMap = {
-      companyFilter: unique(data.map(d => d.companyName)).sort(),
-      drugFilter: unique(data.map(d => d.drugName)).sort(),
-      indicationFilter: unique(data.map(d => d.indication)).sort(),
-      monthFilter: sortMonths(unique(data.map(d => d.month))),
-      yearFilter: unique(data.map(d => d.year.toString())).sort((a, b) => a - b),
-    };
-  
-    filters.forEach(id => {
-      const select = document.getElementById(id);
-  
-      // Skip re-initializing if already exists
-      if (choicesInstances[id]) {
-        choicesInstances[id].clearChoices();
-      }
-  
-      if (id !== 'issueFilter') {
-        const options = fieldMap[id].map(value => ({ value, label: value }));
-        if (choicesInstances[id]) {
-          choicesInstances[id].setChoices(options, 'value', 'label', true);
-        } else {
-          choicesInstances[id] = new Choices(select, {
-            removeItemButton: true,
-            searchEnabled: true,
-            shouldSort: false,
-            placeholderValue: `Select ${id.replace('Filter', '')}`,
-            noResultsText: 'No match found',
-          });
-          choicesInstances[id].setChoices(options, 'value', 'label', true);
-        }
-      } else {
-        // For issue filter, use the category names from issueCategories
-        const issueCategories = unique(data.flatMap(item => item.issueCategories?.map(cat => cat.category) || [])).sort();
-        const options = issueCategories.map(value => ({ value, label: value }));
-        
-        if (!choicesInstances[id]) {
-          choicesInstances[id] = new Choices(select, {
-            removeItemButton: true,
-            searchEnabled: true,
-            shouldSort: false,
-            placeholderValue: 'Select issues',
-            noResultsText: 'No match found',
-          });
-        } else {
-          choicesInstances[id].clearChoices();
-        }
-        choicesInstances[id].setChoices(options, 'value', 'label', true);
-      }
-    });
-  }
-  
+  const unique = (arr) => [...new Set(arr)];
 
-// Get all selected values from a multi-select
-function getSelectedValues(selectId) {
-  return choicesInstances[selectId]
-    .getValue()
-    .map(choice => choice.value);
+  const MONTH_ORDER = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  const sortMonths = (months) => {
+    return MONTH_ORDER.filter(month => months.includes(month));
+  };
+
+  filters.forEach(id => {
+    const dropdown = document.getElementById(id);
+    if (!dropdown) return;
+
+    const optionsContainer = dropdown.querySelector(`.${id.replace('Filter', '-options')}`);
+    if (!optionsContainer) return;
+
+    // Clear existing options
+    optionsContainer.innerHTML = '';
+    
+    let values = [];
+
+    // Get values based on filter type
+    if (id === 'categoryFilter') {
+      values = unique(data.flatMap(item => 
+        item.issueCategories?.map(cat => cat.category) || []
+      )).filter(Boolean).sort();
+    } 
+    else if (id === 'subcategoryFilter') {
+      values = unique(data.flatMap(item => 
+        item.issueCategories?.flatMap(cat => cat.subcategories || []) || []
+      )).filter(cat => cat !== 'Not applicable').sort();
+    }
+    else if (id === 'companyFilter') {
+      values = unique(data.map(d => d.companyName).filter(Boolean));
+    }
+    else if (id === 'indicationFilter') {
+      values = unique(data.map(d => d.indication).filter(Boolean));
+    }
+    else if (id === 'monthFilter') {
+      values = sortMonths(unique(data.map(d => d.month).filter(Boolean)));
+    }
+    else if (id === 'yearFilter') {
+      values = unique(data.map(d => d.year?.toString()).filter(Boolean)).sort((a, b) => a - b);
+    }
+
+    // Create and append checkbox options
+    values.forEach(value => {
+      const option = createCheckboxOption(value, id);
+      optionsContainer.appendChild(option);
+
+      // Add change event listener to checkbox
+      const checkbox = option.querySelector('input');
+      checkbox.addEventListener('change', (e) => {
+        if (e.target.checked) {
+          selectedValues[id].add(value);
+        } else {
+          selectedValues[id].delete(value);
+        }
+        updateDropdownText(id);
+        filterResults();
+        updateSelectedFiltersDisplay();
+      });
+    });
+
+    // Handle select all checkbox
+    const selectAllCheckbox = document.getElementById(`${id}SelectAll`);
+    if (selectAllCheckbox) {
+      selectAllCheckbox.addEventListener('change', (e) => {
+        const checkboxes = optionsContainer.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+          checkbox.checked = e.target.checked;
+          if (e.target.checked) {
+            selectedValues[id].add(checkbox.value);
+          } else {
+            selectedValues[id].delete(checkbox.value);
+          }
+        });
+        updateDropdownText(id);
+        filterResults();
+        updateSelectedFiltersDisplay();
+      });
+    }
+
+    // Initialize dropdown text
+    updateDropdownText(id);
+  });
+}
+
+// Get all selected values from a filter
+function getSelectedValues(filterId) {
+  return Array.from(selectedValues[filterId]);
+}
+
+// Update selected filters display
+function updateSelectedFiltersDisplay() {
+  const container = document.getElementById('selectedFilters');
+  const tagsContainer = document.getElementById('selectedFilterTags');
+  if (!container || !tagsContainer) return;
+
+  // Clear existing tags
+  tagsContainer.innerHTML = '';
+
+  // Map filter IDs to their display names and types
+  const filterInfo = {
+    companyFilter: { name: 'Company', type: 'company' },
+    indicationFilter: { name: 'Indication', type: 'indication' },
+    categoryFilter: { name: 'Category', type: 'category' },
+    subcategoryFilter: { name: 'Subcategory', type: 'subcategory' },
+    yearFilter: { name: 'Year', type: 'year' }
+  };
+
+  // Track if we have any selected filters
+  let hasSelectedFilters = false;
+
+  // Create tags for each selected filter
+  Object.entries(selectedValues).forEach(([filterId, values]) => {
+    if (values.size > 0 && filterInfo[filterId]) {
+      hasSelectedFilters = true;
+      values.forEach(value => {
+        const tag = document.createElement('span');
+        tag.className = `filter-tag ${filterInfo[filterId].type}`;
+        tag.textContent = `${filterInfo[filterId].name}: ${value}`;
+        tagsContainer.appendChild(tag);
+      });
+    }
+  });
+
+  // Show/hide the container based on whether we have selected filters
+  container.classList.toggle('d-none', !hasSelectedFilters);
 }
 
 // Filter data based on selected dropdown values
-function filterResults() {
+window.filterResults = function filterResults() {
   const companies = getSelectedValues('companyFilter');
-  const drugs = getSelectedValues('drugFilter');
+  const categories = getSelectedValues('categoryFilter');
+  const subcategories = getSelectedValues('subcategoryFilter');
   const indications = getSelectedValues('indicationFilter');
   const months = getSelectedValues('monthFilter');
   const years = getSelectedValues('yearFilter');
-  const issues = getSelectedValues('issueFilter');
 
   const filtered = pdfData.filter(item => {
     return (
       (companies.length === 0 || companies.includes(item.companyName)) &&
-      (drugs.length === 0 || drugs.includes(item.drugName)) &&
       (indications.length === 0 || indications.includes(item.indication)) &&
       (months.length === 0 || months.includes(item.month)) &&
       (years.length === 0 || years.includes(item.year.toString())) &&
-      (issues.length === 0 || issues.some(issue => item.issueCategories?.some(cat => cat.category === issue && cat.subcategories.length > 0)))
+      (categories.length === 0 || categories.some(cat => 
+        item.issueCategories?.some(ic => ic.category === cat)
+      )) &&
+      (subcategories.length === 0 || subcategories.some(sub => 
+        item.issueCategories?.some(ic => ic.subcategories.includes(sub))
+      ))
     );
   });
 
   displayResults(filtered);
-  updateSankey(filtered);
+  updateSelectedFiltersDisplay();
 }
 
 // Display filtered PDF results
@@ -131,7 +255,7 @@ function displayResults(results) {
     link.className = 'list-group-item list-group-item-action';
     link.innerHTML = `
       <h5 class="mb-1">${item.pdfName}</h5>
-      <p class="mb-1">${item.drugName} | ${item.companyName} | ${item.indication}</p>
+      <p class="mb-1">${item.companyName} | ${item.indication}</p>
       <small>${item.month} ${item.year} | ${item.outcome}</small>
     `;
     container.appendChild(link);
@@ -141,10 +265,29 @@ function displayResults(results) {
 // Clear all filters and reset dropdowns
 function clearAllFilters() {
   filters.forEach(id => {
-    choicesInstances[id]?.removeActiveItems();
+    // Clear selected values
+    selectedValues[id].clear();
+    
+    // Uncheck all checkboxes
+    const optionsContainer = document.querySelector(`#${id} .${id.replace('Filter', '-options')}`);
+    if (optionsContainer) {
+      optionsContainer.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.checked = false;
+      });
+    }
+    
+    // Reset select all checkbox
+    const selectAllCheckbox = document.getElementById(`${id}SelectAll`);
+    if (selectAllCheckbox) {
+      selectAllCheckbox.checked = false;
+    }
+    
+    // Update dropdown text
+    updateDropdownText(id);
   });
-  displayResults(pdfData);
-  updateSankey(pdfData);
+  
+  filterResults();
+  updateSelectedFiltersDisplay();
 }
 
 // Button handlers
