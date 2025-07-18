@@ -7,23 +7,24 @@ A simple web app to view and filter FDA regulatory PDF documents by company, dru
 - Interactive Sankey diagram visualization showing relationships between:
   - Companies
   - Therapeutic Areas
-  - Drugs
+  - Categories
+  - Subcategories
   - Years
-- Click on any node in the Sankey diagram to filter documents
-- Multi-select, searchable dropdown filters for:
+- Click on any node in the Sankey diagram to toggle filtering
+- Multi-select Bootstrap dropdown filters with checkboxes for:
   - Company Name
-  - Drug Name
-  - Indication
-  - Month and Year
-  - Issue Categories (e.g., Manufacturing, Labeling)
+  - Indication (Therapeutic Area)
+  - Issue Categories
+  - Issue Subcategories
+  - Year
+- Dynamic filter summary display showing currently selected filters
 - View matched PDFs directly in browser
 - Clear All button to reset filters
 
 ## 🛠 Tech Stack
 
 - HTML, JavaScript
-- Bootstrap 5 for layout and styling
-- Choices.js for enhanced dropdowns
+- Bootstrap 5 for layout, styling, and multi-select dropdowns
 - D3.js and D3-Sankey for data visualization
 
 ## 📁 Project Structure
@@ -54,8 +55,7 @@ python3 -m http.server 8000
 
 ## 📦 Dependencies (CDN)
 
-- Bootstrap 5
-- Choices.js
+- Bootstrap 5 (CSS and JS bundle)
 - D3.js v7
 - D3-Sankey v0.12.3
 
@@ -63,9 +63,10 @@ All included in `index.html` via CDN.
 
 ## 🙋‍♂️ For Users
 
-- Use the interactive Sankey diagram to explore relationships between companies, therapeutic areas, drugs, and years
-- Click on any node in the Sankey diagram to filter related documents
-- Use the dropdown filters to further narrow down documents of interest
+- Use the interactive Sankey diagram to explore relationships between companies, therapeutic areas, categories, subcategories, and years
+- Click on any node in the Sankey diagram to toggle filtering
+- Use the multi-select dropdown filters with checkboxes to filter documents
+- View currently selected filters below the search button
 - Click document titles to open PDFs
 
 ## 🧑‍💻 For Developers
