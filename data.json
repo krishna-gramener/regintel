@@ -33,7 +33,8 @@
       }
     ],
     "month": "December",
-    "year": "2023"
+    "year": "2023",
+    "summary": "The FDA issued a Complete Response letter to CooperSurgical, Inc. for its supplemental New Drug Application (sNDA 018680/S-074) for Paragard. The supplement provided for a new inserter to facilitate single-hand placement. The sole deficiency identified for non-approval was that the CooperSurgical manufacturing facility in New York was not ready for inspection when the field investigator visited. A satisfactory facility inspection is required before the application can be approved. The letter also provided numerous non-approvability recommendations to improve the carton, container, and Placement Guide labeling to enhance clarity and user safety."
   },
   {
     "pdfName": "021164Orig1s000OtherActionLtrs.pdf",
@@ -74,7 +75,8 @@
       }
     ],
     "month": "November",
-    "year": "2007"
+    "year": "2007",
+    "summary": "The FDA issued multiple non-approvable letters for Gepirone Hydrochloride Extended-Release (NDA 021164), submitted by Organon, Inc. and later Fabre-Kramer Pharmaceuticals, Inc., for the treatment of Major Depressive Disorder (MDD). The primary and consistent reason for non-approval across letters dated March 15, 2002, June 23, 2004, and November 2, 2007, was the failure to provide substantial evidence of effectiveness. The FDA noted a preponderance of failed clinical trials (e.g., only 2 out of 12 trials showed a significant effect in the 2007 letter), an unacceptably small effect size, and multiple studies where gepirone was inferior to active comparators. A long-term maintenance study was also found to be negative. Additional deficiencies cited over the years included inadequate long-term safety data, unacceptable proposed tradenames, and various Chemistry, Manufacturing, and Controls (CMC) issues."
   },
   {
     "pdfName": "022075Orig1s000OtherActionLtrs.pdf",
@@ -105,7 +107,8 @@
       }
     ],
     "month": "February",
-    "year": "2008"
+    "year": "2008",
+    "summary": "The FDA issued a not approvable letter to Kyowa Pharmaceutical, Inc. for its New Drug Application (NDA 22-075) for istradefylline tablets as an adjunctive treatment for advanced Parkinson's Disease (PD). The primary deficiency was clinical. While istradefylline demonstrated a reduction in \"OFF time,\" it failed to show any corresponding benefit on other PD symptoms or global measures of functioning, unlike other approved therapies. The FDA concluded there was no identifiable patient population for whom the drug would be a suitable choice. A new trial in maximally treated patients was recommended. A nonclinical deficiency was also noted, requiring a comprehensive summary and further analysis of a brain mineralization finding."
   },
   {
     "pdfName": "022231Orig1s000OtherActionLtrs.pdf",
@@ -136,7 +139,8 @@
       }
     ],
     "month": "February",
-    "year": "2022"
+    "year": "2022",
+    "summary": "The FDA issued multiple complete response letters to various applicants for New Drug Application (NDA 022231) for terlipressin (Terlivaz/Lucassin) for the treatment of Hepatorenal Syndrome Type I (HRS-I). The primary deficiency was clinical. Although the CONFIRM trial met its primary endpoint, there was a significantly higher incidence of serious adverse events, particularly respiratory failure, in the terlipressin group compared to placebo. Earlier studies failed to demonstrate statistically significant efficacy or safety with sufficient exposure. The FDA concluded that the risk-benefit profile remains unfavorable without additional data. Applicants were advised to conduct at least one more well-controlled clinical trial, potentially with a risk mitigation strategy, and to provide comprehensive safety updates and manufacturing resolutions before reconsideration."
   },
   {
     "pdfName": "022335Orig1s000OtherActionLtrs.pdf",
@@ -172,7 +176,8 @@
       }
     ],
     "month": "June",
-    "year": "2021"
+    "year": "2021",
+    "summary": "The FDA issued a Complete Response letter to Cyclomedica Australia Pty Ltd. for its New Drug Application (NDA 022335) for Technegas™ (Technetium Tc-99m carbon aerosol). The application was not approved due to numerous, significant deficiencies primarily related to Product Quality. These included inadequate characterization and control of the aerosol drug product, its critical crucible component, and the manufacturing processes for both. The FDA required the development and validation of quality programs, analytical methods, and specifications. Further deficiencies were identified in clinical use, specifically the lack of clear instructions to mitigate the risk of dyspnea and hypoxia, and inadequate justification for the proposed radioactive loading ranges. Finally, objectionable conditions were noted during a facility inspection that require resolution."
   },
   {
     "pdfName": "022450Orig1s000OtherActionLtrs.pdf",
@@ -203,7 +208,8 @@
       }
     ],
     "month": "February",
-    "year": "2010"
+    "year": "2010",
+    "summary": "The FDA issued a Complete Response letter to Cadence Pharmaceuticals for New Drug Application (NDA) 022450 for Ofirmev (acetaminophen) Injection. The primary reason for the action was deficiencies identified during an inspection of the Baxter Healthcare manufacturing facility in Cleveland, MS. The FDA stated that satisfactory compliance with Current Good Manufacturing Practices (CGMP) is required for all manufacturing and testing facilities before the application can be approved."
   },
   {
     "pdfName": "022517Orig1s000OtherActionLtrs.pdf",
@@ -234,7 +240,8 @@
       }
     ],
     "month": "January",
-    "year": "2015"
+    "year": "2015",
+    "summary": "The FDA issued multiple Complete Response letters to Ferring Pharmaceuticals Inc. for Nocdurna (desmopressin) tablets for adult nocturia. The central, evolving issue was the balance of a modest clinical benefit against the significant risk of hyponatremia. The initial 2010 letter noted efficacy only at a high, unsafe dose and required a new trial for a lower dose. Subsequent letters in 2013 and 2015 reiterated that even at lower doses, the small reduction in nocturnal voids was of unclear clinical benefit and did not outweigh the safety risk. The FDA required a new trial utilizing a validated patient-reported outcome instrument to demonstrate a clinically meaningful benefit. Other deficiencies cited in earlier letters included an unvalidated bioanalytical method for a bioequivalence study and a lack of nonclinical bridging data."
   },
   {
     "pdfName": "022561Orig1s000OtherActionLtrs.pdf",
@@ -269,7 +276,8 @@
       }
     ],
     "month": "February",
-    "year": "2011"
+    "year": "2011",
+    "summary": "The FDA issued a Complete Response letter to EMD Serono, Inc. for its New Drug Application (NDA 022561) for cladribine tablets for the treatment of relapsing remitting multiple sclerosis (RRMS). While the FDA concluded that cladribine was effective, the application was not approved because the benefits were outweighed by an unacceptable and disproportionate risk of malignancy observed in cladribine-treated patients compared to placebo. The agency required the company to provide a better understanding of this risk before approval could be considered. Other major concerns included the need to better characterize the duration of cladribine-induced lymphopenia and to clarify the long-term dosing plan. Numerous other requests for detailed safety analyses and a product quality deficiency related to dissolution specifications were also cited."
   },
   {
     "pdfName": "125522Orig2s000OtherActionLtrs.pdf",
@@ -300,7 +308,8 @@
       }
     ],
     "month": "August",
-    "year": "2015"
+    "year": "2015",
+    "summary": "The FDA issued a Complete Response letter to Amgen, Inc. for Biologics License Application (BLA) 125522/Original 2 for Repatha (evolocumab). The application sought approval for a 420 mg every two weeks dosing regimen for patients with homozygous familial hypercholesterolemia (HoFH). The FDA determined that the application could not be approved due to insufficient clinical data to characterize this specific dosing regimen and to demonstrate what, if any, incremental benefit is achieved by dosing every two weeks compared to the once-monthly regimen. The agency required additional adequate and well-controlled studies to address this deficiency."
   },
   {
     "pdfName": "200655_2019_Orig1s000OtherActionLtrs.pdf",
@@ -331,7 +340,8 @@
       }
     ],
     "month": "September",
-    "year": "2016"
+    "year": "2016",
+    "summary": "This file contains two Complete Response letters (October 22, 2013, and September 15, 2016) for the New Drug Application (NDA 200655) for Fluorodopa F 18 Injection. The primary and consistent reason for non-approval was the lack of data from adequate and well-controlled clinical trials. The studies submitted were found to be retrospective, lacked pre-specified protocols, and were compromised by a biased \"standard of truth\" (the clinical diagnosis was not independent of the PET scan results). This, along with significant deficiencies found during a Good Clinical Practice (GCP) inspection, called the reliability of all clinical data into question. The FDA recommended conducting a new, prospective, well-controlled trial. Additionally, multiple unresolved product quality issues were cited as outstanding deficiencies."
   },
   {
     "pdfName": "201110_2020_Orig1s000OtherActionLtrs.pdf",
@@ -366,7 +376,8 @@
       }
     ],
     "month": "November",
-    "year": "2016"
+    "year": "2016",
+    "summary": "This document contains two Complete Response letters for a progesterone vaginal ring (NDA 201110), initially submitted by Teva Women's Health, Inc. and later transferred to Ferring Pharmaceuticals, Inc. The February 28, 2011 letter to Teva cited multiple deficiencies, including product quality issues (foreign particulate contamination, inadequate specifications), unresolved facility inspection deficiencies, and a clinical failure to provide sufficient efficacy evidence in the subgroup of women aged 35-42. The November 23, 2016 letter to Ferring reiterated the clinical efficacy deficiency and added significant new device-related issues. These included insufficient biocompatibility data to support the safety of the to-be-marketed combination product (testing on a placebo ring was deemed inadequate) and the lack of a clinical safety study to bridge the new ring with the legacy version used in earlier trials. The FDA recommended a new clinical safety study and additional biocompatibility testing on the final combination product."
   },
   {
     "pdfName": "201848_2024_Orig1s000OtherActionLtrs.pdf",
@@ -407,7 +418,8 @@
       }
     ],
     "month": "September",
-    "year": "2013"
+    "year": "2013",
+    "summary": "The FDA issued a Complete Response letter for Delcath Systems' NDA 201848 for the Melblez Kit (melphalan for injection with a hepatic delivery system). The application was not approved because the product's risks were determined to outweigh its benefits. The pivotal clinical trial failed to show a survival benefit and demonstrated significant risks, including a 7% rate of toxic death and serious toxicities. The FDA requires a new, well-controlled clinical trial demonstrating substantial evidence of effectiveness, likely with overall survival as the primary endpoint. Numerous other major deficiencies were also cited, including: a lack of data to bridge the clinical trial device to the proposed commercial device; insufficient pharmacokinetic data; extensive unresolved product quality issues related to leachables, extractables, and raw material sourcing for the device; and the lack of an adequate human factors study."
   },
   {
     "pdfName": "202049_2021_Orig1s000OtherActionLtrs.pdf",
@@ -438,7 +450,8 @@
       }
     ],
     "month": "June",
-    "year": "2019"
+    "year": "2019",
+    "summary": "This file contains two Complete Response letters for mannitol inhalation powder (NDA 202049), initially from Pharmaxis Ltd. and later Chiesi USA, Inc. The first letter, dated March 18, 2013, found an unfavorable benefit-risk balance due to inadequate efficacy data (confounded by high dropout rates and lack of statistical significance) and a significant safety concern of hemoptysis, particularly in pediatric patients. It also noted unresolved manufacturing facility deficiencies. The second letter, dated June 19, 2019, cited a new primary deficiency related to Clinical-Human Factor studies. The submitted data failed to demonstrate that healthcare providers could reliably and accurately perform the required Mannitol Tolerance Test (MTT). This failure represents a significant safety risk, as it could lead to prescribing the drug to intolerant patients, potentially causing severe bronchospasm. To address this, the FDA required a revision of the product user interface and a new supplemental human factors validation study."
   },
   {
     "pdfName": "202158_2018_Orig1s000OtherActionLtrs.pdf",
@@ -474,7 +487,8 @@
       }
     ],
     "month": "November",
-    "year": "2013"
+    "year": "2013",
+    "summary": "The FDA issued a Complete Response letter for NorthStar Medical Radioisotopes' NDA 202158 for the TechneGen Generator System for preparing Sodium Pertechnetate Tc99m Injection. The application was not approved due to numerous, wide-ranging deficiencies. Clinically, the product labeling, user manuals, and training materials were inadequate, preventing a full safety evaluation and necessitating a human factors study. Major Product Quality Microbiology deficiencies were identified, including insufficient data to support sterility assurance, microbial control during the in-use period, and validation of the cleaning and manufacturing processes. Numerous CMC issues were also listed, including inadequate specifications and sterilization validation. Finally, multiple manufacturing facilities, including NorthStar's, were not ready for inspection, and a referenced Drug Master File (DMF) was also found to be deficient."
   },
   {
     "pdfName": "202408_2019_Orig1s000OtherActionLtrs.pdf",
@@ -509,7 +523,8 @@
       }
     ],
     "month": "March",
-    "year": "2019"
+    "year": "2019",
+    "summary": "This document contains multiple FDA actions regarding Fera Pharmaceuticals' NDA 202408 for Avaclyr (acyclovir ophthalmic ointment) 3%. The FDA issued two Complete Response letters (March 31, 2014, and June 24, 2016), both citing the same primary deficiency: the failure to provide a sufficient scientific \"bridge\" between Fera's proposed product and the reference product used in published clinical trials. The FDA required extensive characterization data (e.g., petrolatum properties, viscosity, particle size, polymorphism) and a validated in vitro release test (IVRT) to establish this bridge, or alternatively, a new controlled clinical trial. Subsequently, on March 28, 2019, the FDA issued a letter rescinding both previous Complete Response letters, stating they were issued in error and that the application was being placed back under review."
   },
   {
     "pdfName": "202860_2019_Orig1s000OtherActionLtrs.pdf",
@@ -544,7 +559,9 @@
       }
     ],
     "month": "January",
-    "year": "2019"
+    "year": "2019",
+    "summary": "This file documents the regulatory history for GeNOsyl (nitric oxide for inhalation) delivery system (NDA 202860), showing multiple non-approval actions. An initial Refusal to File in 2012 was due to incorrect application formatting and insufficient CMC information. A 2013 Complete Response letter listed extensive Product Quality deficiencies, including inadequate cartridge specifications, stability data, and referenced DMF issues, along with facilities not being ready for inspection. The final Complete Response letter in 2019 to Vero Biotech cited ongoing facility inspection deficiencies, significant unresolved issues with the device's closed-loop control system and electromagnetic immunity (CDRH review), and a critically deficient Human Factors (HF) validation study. The HF study failed to adequately evaluate how users would detect and respond to critical alarms, necessitating a new study."
+
   },
   {
     "pdfName": "204017_2020_Orig1s000OtherActionLtrs.pdf",
@@ -580,7 +597,8 @@
       }
     ],
     "month": "December",
-    "year": "2017"
+    "year": "2017",
+    "summary": "This document contains multiple action letters regarding the New Drug Application (NDA 204017) for Twirla (levonorgestrel/ethinyl estradiol transdermal system) from Agile Therapeutics, Inc. The primary reason for non-approval, detailed in the December 22, 2017 Complete Response letter, is the product's unacceptable in vivo adhesion. This product quality failure was linked to poor clinical outcomes in the pivotal trial (ATI-CL23), including a higher-than-expected pregnancy rate (Pearl Index of 5.83), high subject discontinuation rates (>50%), and poor cycle control. The FDA concluded that the company had not demonstrated the product has the requisite adhesion properties for safe and effective use. Deficiencies in the in-vitro adhesion tests and unresolved objectionable conditions at the manufacturing facility were also cited. Earlier letters from 2013 also highlighted failed efficacy studies and product quality issues."
   },
   {
     "pdfName": "204311_2024_Orig1s000OtherActionLtrs.pdf",
@@ -611,7 +629,8 @@
       }
     ],
     "month": "January",
-    "year": "2023"
+    "year": "2023",
+    "summary": "This file contains several action letters for Mylan's NDA 204311 for Abacavir and Lamivudine Tablets for Oral Suspension. The application initially received a Tentative Approval letter on October 23, 2014. However, subsequent Complete Response letters, dated August 6, 2019, and January 13, 2023, prevented final approval. The consistent and sole deficiency cited in these later letters was the observation of objectionable conditions during surveillance inspections of the Mylan Laboratories Limited Unit-8 manufacturing facility in Vizianagaram, India. Satisfactory resolution of these facility deficiencies is required before the NDA can be approved."
   },
   {
     "pdfName": "204417Orig1s000OtherActionLtr.pdf",
@@ -642,7 +661,8 @@
       }
     ],
     "month": "March",
-    "year": "2017"
+    "year": "2017",
+    "summary": "This file contains multiple action letters for Sun Pharma's NDA 204417 for Elepsia XR (levetiracetam extended-release tablets). An initial Complete Response letter on March 29, 2013, cited a Clinical Pharmacology deficiency: while bioequivalent to Keppra XR in the fasted state, the product's plasma concentration-time profiles differed significantly in the fed state, and the 1500 mg tablet showed a potential for dose dumping with alcohol. Subsequent Complete Response letters, dated September 23, 2015, and March 22, 2017, stated that the application could not be approved due to unresolved deficiencies at the Sun Pharmaceutical Industries manufacturing facilities. The 2017 letter also noted an issue with including certain dosing information in the labeling."
   },
   {
     "pdfName": "204803_2022_Orig1s000OtherActionLtrs.pdf",
@@ -673,7 +693,8 @@
       }
     ],
     "month": "February",
-    "year": "2014"
+    "year": "2014",
+    "summary": "The FDA issued a Complete Response letter to DURECT Corporation for its New Drug Application (NDA 204803) for POSIMIR (bupivacaine extended-release solution for instillation). The application was not approved because it lacked sufficient information to demonstrate the product's safety. Specific deficiencies included adverse events related to the shoulder joint and surrounding tissues observed in long-term follow-up, and a markedly increased risk of local skin reactions (e.g., bruising, hematoma, dehiscence) and neurological adverse events (e.g., dizziness, headache, paresthesia) associated with the SABER-containing formulation. The FDA requires additional, well-designed safety studies to adequately characterize these risks before the application can be approved."
   },
   {
     "pdfName": "204957_2021_Orig1s000OtherActionLtrs.pdf",
@@ -708,7 +729,8 @@
       }
     ],
     "month": "April",
-    "year": "2020"
+    "year": "2020",
+    "summary": "This file contains multiple Complete Response letters issued to B. Braun Medical, Inc. for its New Drug Application (NDA 204957) for Acetaminophen Injection. The consistent primary deficiency across all letters (September 28, 2017; March 27, 2019; and April 24, 2020) was the presence of unresolved deficiencies and objectionable conditions observed during inspections of the B. Braun manufacturing facility. The March 2019 and April 2020 letters also cited an outstanding regulatory deficiency related to the need for updated patent waiver letters from Mallinckrodt. While the company worked to address labeling and other minor issues, the unresolved facility inspection findings remained the key barrier to approval throughout this period."
   },
   {
     "pdfName": "205054Orig1s000OtherActionLtr.pdf",
@@ -744,7 +766,8 @@
       }
     ],
     "month": "May",
-    "year": "2015"
+    "year": "2015",
+    "summary": "The FDA issued a Complete Response letter to the ELC Group for GP Pharm's NDA 205054 for Lutrate® Depot (leuprolide acetate for injection). The application was not approved due to both clinical and product quality deficiencies. The clinical deficiency was the failure of the product to achieve and maintain castrate testosterone levels in an acceptable percentage of patients, a key surrogate marker for efficacy in advanced prostate cancer. Product quality deficiencies were numerous and significant, including an inaccurate batch formula, lack of stability data for the drug substance and primary batches of the drug product, and unresolved issues with overfill. Additionally, deficiencies were noted at the manufacturing facility, and regulatory issues regarding reliance on listed drugs were not adequately addressed."
   },
   {
     "pdfName": "205394_2023_Orig1s000OtherActionLtrs.pdf",
@@ -779,7 +802,8 @@
       }
     ],
     "month": "March",
-    "year": "2020"
+    "year": "2020",
+    "summary": "This file contains three Complete Response letters for IntelGenx Corp.'s NDA 205394 for RizaFilm/Rizaport (rizatriptan) oral film. The first letter, dated January 31, 2014, to RedHill Biopharma, cited numerous significant Product Quality deficiencies, including issues with process description, formulation, impurities, specifications, stability, and container closure. It also noted unresolved facility inspections and a regulatory deficiency regarding patent notification. A subsequent letter on March 28, 2019, to IntelGenx, reiterated many of the Product Quality deficiencies and highlighted ongoing issues at both the drug substance and drug product manufacturing facilities. The final Complete Response letter, dated March 24, 2020, confirmed that manufacturing process deficiencies and unresolved facility inspections remained the primary barriers to approval, rendering existing stability data unusable and requiring the manufacture of new exhibit batches."
   },
   {
     "pdfName": "205920_2018_Orig1s000OtherActionLtrs.pdf",
@@ -810,7 +834,8 @@
       }
     ],
     "month": "December",
-    "year": "2016"
+    "year": "2016",
+    "summary": "This file contains two Complete Response letters for Primatene Mist (epinephrine HFA inhalation aerosol) under NDA 205920. The first letter, dated May 22, 2014, cited deficiencies in product quality (unresolved cGMP issues at the manufacturing facility), nonclinical data (lack of chronic toxicity data for the excipient thymol), and clinical data. The clinical deficiencies highlighted significant consumer usability issues with the device and poor comprehension of critical label information, making it unsuitable for OTC use. The second letter, dated December 23, 2016, focused on the failure of a new human factors (HF) study to demonstrate safe and effective use. Approximately 30% of participants made clinically important errors in critical tasks like priming and cleaning, which could lead to incorrect dosing. The FDA concluded that the user interface was not sufficiently supportive for the proposed OTC use and required further optimization and another HF validation study."
   },
   {
     "pdfName": "206089_2019_Orig1s000OtherActionLtrs.pdf",
@@ -841,7 +866,8 @@
       }
     ],
     "month": "March",
-    "year": "2018"
+    "year": "2018",
+    "summary": "This document contains two Complete Response letters for Clarus Therapeutics' NDA 206089 for oral testosterone undecanoate (Jatenzo). The first letter, from November 3, 2014, identified multiple deficiencies. The primary issue was the product's significant food effect, where testosterone exposure varied greatly with the fat content of meals, leading to concerns about reliable and safe dosing. The pivotal Phase 3 trial was also flawed, with efficacy barely meeting its endpoint, a problematic titration regimen, and supraphysiologic DHT levels. The second letter, dated March 22, 2018, highlighted a new, overriding deficiency: Jatenzo caused clinically meaningful increases in blood pressure, a risk that was deemed to outweigh the benefits, especially in men already at risk for cardiovascular disease. Additional deficiencies included the need to validate the use of NaF/EDTA tubes for testosterone measurement and unacceptable nonclinical fertility and carcinogenicity studies."
   },
   {
     "pdfName": "206185_2018_Orig1s000OtherActionLtrs.pdf",
@@ -876,7 +902,8 @@
       }
     ],
     "month": "December",
-    "year": "2016"
+    "year": "2016",
+    "summary": "This document contains three Complete Response letters for Sun Pharma's NDA 206185 for Xelpros (latanoprost ophthalmic emulsion). The primary and consistent reason for non-approval across all letters (November 24, 2014; July 30, 2015; and December 19, 2016) was the presence of unresolved deficiencies at the Sun Pharmaceutical Industries manufacturing facility in Halol, India. While some minor product quality and labeling issues were mentioned in the earlier letters, the core approvability issue remained the facility's compliance status. Satisfactory resolution of the manufacturing deficiencies is required before the application can be approved."
   },
   {
     "pdfName": "206610_2021_Orig1s000OtherActionLtrs.pdf",
@@ -907,7 +934,8 @@
       }
     ],
     "month": "June",
-    "year": "2019"
+    "year": "2019",
+    "summary": "This file contains multiple Complete Response letters for Mylan's NDA 206610 for Acetaminophen for Injection. The primary and recurring deficiencies were nonclinical and related to inadequate assessment of extractables and leachables from the container closure system. Letters from February 27, 2015, March 10, 2016, and February 1, 2017, all cited the need for a comprehensive toxicological risk assessment of identified and unidentified leachables exceeding the threshold of toxicological concern. The 2015 letter also flagged issues with clastogenic and potentially mutagenic drug substance impurities. In addition, unresolved deficiencies at various manufacturing facilities were cited as a reason for non-approval in letters from 2015 and 2019. Regulatory deficiencies, including the need for updated patent certifications and letters from the innovator company, were noted in the June 6, 2019 letter."
   },
   {
     "pdfName": "206927_2019_Orig1s000OtherActionLtrs.pdf",
@@ -943,7 +971,8 @@
       }
     ],
     "month": "May",
-    "year": "2016"
+    "year": "2016",
+        "summary": "This file contains two Complete Response letters for Dr. Reddy's Laboratories' NDA 206927 for bortezomib for injection. The initial letter, dated December 17, 2014, cited a deficient Drug Master File (DMF) for the drug substance and consequently denied a biowaiver for the intravenous product. The second letter, dated May 4, 2016, reiterated the facility inspection deficiency and added significant new Product Quality concerns. Specifically, changes in the batch formula and manufacturing process resulted in a slower drug reconstitution time, which raised concerns about product quality, stability bridging to previous batches, and the potential for medication errors. The FDA required additional stability and batch data to address these issues."
   },
   {
     "pdfName": "206966_2020_Orig1s000OtherActionLtrs.pdf",
@@ -974,7 +1003,8 @@
       }
     ],
     "month": "August",
-    "year": "2016"
+    "year": "2016",
+    "summary": "The FDA issued a Complete Response letter to Dr. Reddy's Laboratories, SA for its New Drug Application (NDA 206966) for Xeglyze (abametapir) Lotion, 0.74%. The sole reason for the action was deficiencies conveyed to the company's representative during a recent inspection of the Dr. Reddy's Lab Ltd. CTO Unit VI manufacturing facility. The letter states that satisfactory resolution of these manufacturing deficiencies is required before the NDA can be approved."
   },
   {
     "pdfName": "206968_2023_Orig1s000OtherActionLtrs.pdf",
@@ -1015,6 +1045,7 @@
       }
     ],
     "month": "December",
-    "year": "2020"
+    "year": "2020",
+    "summary": "This file contains multiple Complete Response letters issued to InnoPharma Licensing LLC for NDA 206968, Acetaminophen Injection. The letters, dated February 27, 2015, November 15, 2016, November 9, 2018, and December 22, 2020, consistently cite nonclinical and product quality deficiencies. Key nonclinical issues include inadequate safety justification for the drug formulation, specifically concerning local toxicity, elemental impurities, and a comprehensive toxicological assessment of leachables (including newly formed adducts). Product Quality deficiencies involved the need for validated leachable methods, complete stability data, and unresolved issues with manufacturing processes. Regulatory and facility inspection deficiencies, including patent certifications and issues at manufacturing sites, were also repeatedly cited as reasons for non-approval."
   }
 ]

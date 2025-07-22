@@ -12,6 +12,7 @@
     <!-- D3.js and Sankey Plugin -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
       .sankey-container {
         width: 100%;
@@ -310,6 +311,27 @@
       </div>
 
         <p id="noOfElementsFound" class="text-center text-muted"></p>
+        
+        <!-- Summary Section -->
+        <div id="summarySection" class="d-none mb-4">
+          <div class="card border-primary">
+            <div class="card-header bg-primary text-white">
+              <h6 class="mb-0">
+                <i class="bi bi-magic"></i>Summary 
+              </h6>
+            </div>
+            <div class="card-body">
+              <div id="summaryLoading" class="d-none text-center py-3">
+                <div class="spinner-grow spinner-grow-sm text-primary me-2" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                Generating summary...
+              </div>
+              <div id="summaryContent" class="text-muted"></div>
+            </div>
+          </div>
+        </div>
+        
         <!-- Results -->
         <div id="results" class="list-group"></div>
       </div>

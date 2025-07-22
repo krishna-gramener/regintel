@@ -1,7 +1,46 @@
 import { updateSankey} from './sankey.js';
 
 let pdfData = [];
+let token = null;
 const filters = ['companyFilter', 'categoryFilter', 'subcategoryFilter', 'indicationFilter', 'monthFilter', 'yearFilter'];
+
+// LLM API helper functions
+async function init() {
+  try {
+    const response = await fetch("https://llmfoundry.straive.com/token", { credentials: "include" });
+    const data = await response.json();
+    token = data.token;
+  } catch (error) {
+    console.error('Token initialization error:', error);
+  }
+}
+
+async function callLLM(systemPrompt, userMessage) {
+  try {
+    const response = await fetch("https://llmfoundry.straive.com/openai/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token}:regIntel`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        model: "gpt-4.1-mini",
+        messages: [
+          { role: "system", content: systemPrompt },
+          { role: "user", content: userMessage },
+        ],
+      }),
+    });
+    const data = await response.json();
+    if (data.error) {
+      throw new Error(data.error.message || "API error occurred");
+    }
+    return data.choices?.[0]?.message?.content || "No response received";
+  } catch (error) {
+    console.error(error);
+    throw new Error(`API call failed: ${error.message}`);
+  }
+}
 
 // Track selected values for each filter
 window.selectedValues = {
@@ -56,11 +95,12 @@ function updateDropdownText(filterId) {
 // Fetch and load PDF metadata
 async function loadPDFData() {
   try {
+    // Initialize LLM token for summary functionality
+    await init();
+    
     const res = await fetch('data.json');
     pdfData = await res.json();
-    
     populateFilters(pdfData);
-    
     displayResults(pdfData);
     updateSankey(pdfData);
   } catch (error) {
@@ -235,6 +275,66 @@ window.filterResults = function filterResults() {
 
   displayResults(filtered);
   updateSelectedFiltersDisplay();
+  
+  // Generate summary for filtered results
+  generateDocumentSummary(filtered);
+}
+
+// Generate LLM summary for filtered documents
+async function generateDocumentSummary(filteredResults) {
+  const summarySection = document.getElementById('summarySection');
+  const summaryLoading = document.getElementById('summaryLoading');
+  const summaryContent = document.getElementById('summaryContent');
+  
+  // Check if we have filters applied and results
+  const hasFilters = Object.values(selectedValues).some(set => set.size > 0);
+  
+  if (!hasFilters || filteredResults.length === 0) {
+    summarySection.classList.add('d-none');
+    return;
+  }
+  
+  // Show summary section and loading state
+  summarySection.classList.remove('d-none');
+  summaryLoading.classList.remove('d-none');
+  summaryContent.innerHTML = '';
+  
+  try {
+    // Collect summaries from filtered documents
+    const documentSummaries = filteredResults
+      .filter(doc => doc.summary && doc.summary.trim())
+      .map(doc => `Company: ${doc.companyName}\nDocument: ${doc.fileName}\nSummary: ${doc.summary}`);
+    
+    if (documentSummaries.length === 0) {
+      summaryContent.innerHTML = '<p class="text-muted">No document summaries available for the filtered results.</p>';
+      summaryLoading.classList.add('d-none');
+      return;
+    }
+    
+    const systemPrompt = `You are an expert regulatory affairs analyst. You will be provided with summaries of FDA regulatory documents (Complete Response Letters, Warning Letters, etc.). Your task is to create a comprehensive, well-structured summary that identifies:
+
+1. Key regulatory issues and deficiencies across all documents
+2. Common themes and patterns
+3. Companies most affected
+4. Critical areas of concern
+5. Regulatory trends and implications
+
+Provide a clear, professional summary that would be valuable for regulatory professionals. Use bullet points and clear headings where appropriate.`;
+    
+    const userMessage = `Please analyze and summarize the following ${documentSummaries.length} FDA regulatory document summaries:\n\n${documentSummaries.join('\n\n---\n\n')}`;
+    
+    const summary = await callLLM(systemPrompt, userMessage);
+    
+    // Use marked.parse to render markdown content
+    const htmlSummary = marked.parse(summary);
+    summaryContent.innerHTML = `<div class="summary-text">${htmlSummary}</div>`;
+    
+  } catch (error) {
+    console.error('Summary generation error:', error);
+    summaryContent.innerHTML = `<div class="alert alert-warning"><i class="bi bi-exclamation-triangle me-2"></i>Unable to generate summary: ${error.message}</div>`;
+  } finally {
+    summaryLoading.classList.add('d-none');
+  }
 }
 
 // Display filtered PDF results
