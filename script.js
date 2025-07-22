@@ -282,15 +282,14 @@ window.filterResults = function filterResults() {
 
 // Generate LLM summary for filtered documents
 async function generateDocumentSummary(filteredResults) {
+  
   const summarySection = document.getElementById('summarySection');
   const summaryLoading = document.getElementById('summaryLoading');
   const summaryContent = document.getElementById('summaryContent');
+
   
-  // Check if we have filters applied and results
-  const hasFilters = Object.values(selectedValues).some(set => set.size > 0);
-  
-  if (!hasFilters || filteredResults.length === 0) {
-    summarySection.classList.add('d-none');
+  if (!summarySection || !summaryLoading || !summaryContent) {
+    console.error('Summary elements not found in DOM');
     return;
   }
   
@@ -303,7 +302,7 @@ async function generateDocumentSummary(filteredResults) {
     // Collect summaries from filtered documents
     const documentSummaries = filteredResults
       .filter(doc => doc.summary && doc.summary.trim())
-      .map(doc => `Company: ${doc.companyName}\nDocument: ${doc.fileName}\nSummary: ${doc.summary}`);
+      .map(doc => `Company: ${doc.companyName}\n ${doc.fileName?"Document: " + doc.fileName:""}\nSummary: ${doc.summary}`);
     
     if (documentSummaries.length === 0) {
       summaryContent.innerHTML = '<p class="text-muted">No document summaries available for the filtered results.</p>';
@@ -311,15 +310,9 @@ async function generateDocumentSummary(filteredResults) {
       return;
     }
     
-    const systemPrompt = `You are an expert regulatory affairs analyst. You will be provided with summaries of FDA regulatory documents (Complete Response Letters, Warning Letters, etc.). Your task is to create a comprehensive, well-structured summary that identifies:
+    const systemPrompt = `You are an expert regulatory affairs analyst. You will be provided with summaries of FDA regulatory documents (Complete Response Letters, Warning Letters, etc.). Your task is to create a comprehensive, well-structured summary
 
-1. Key regulatory issues and deficiencies across all documents
-2. Common themes and patterns
-3. Companies most affected
-4. Critical areas of concern
-5. Regulatory trends and implications
-
-Provide a clear, professional summary that would be valuable for regulatory professionals. Use bullet points and clear headings where appropriate.`;
+Provide a clear, professional summary that would be valuable for regulatory professionals. Use bullet points and clear headings where appropriate.Make sure the headings are not very big`;
     
     const userMessage = `Please analyze and summarize the following ${documentSummaries.length} FDA regulatory document summaries:\n\n${documentSummaries.join('\n\n---\n\n')}`;
     
@@ -403,40 +396,73 @@ function showMainApp() {
   }
 }
 
-// Placeholder function for similarity API call
+// Similarity search using LLM Foundry API
 async function searchDocumentsSimilarity(query) {
-  // TODO: Implement LLM Foundry similarity API call
-  // This function will send the query and all documents to the similarity API
-  // and return the most relevant documents based on semantic similarity
-  
-  console.log('Searching documents with query:', query);
-  console.log('Total documents to search:', pdfData.length);
   
   try {
-    // Placeholder for actual API call
-    // const response = await fetch('LLM_FOUNDRY_SIMILARITY_API_ENDPOINT', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'Authorization': 'Bearer YOUR_API_KEY'
-    //   },
-    //   body: JSON.stringify({
-    //     query: query,
-    //     documents: pdfData,
-    //     top_k: 10 // Number of most similar documents to return
-    //   })
-    // });
-    // 
-    // const results = await response.json();
-    // return results.similar_documents;
+    // Prepare documents for similarity search - use summaries for better semantic matching
+    const filteredDocs = pdfData.filter(doc => doc.summary && doc.summary.trim());
+    const docs = filteredDocs.map(doc => doc.companyName+' ' + doc.year+' ' + doc.month+' ' + doc.indication+' ' + doc.summary);
     
-    // For now, return a mock response
-    return {
-      success: true,
-      query: query,
-      results: pdfData.slice(0, 5), // Return first 5 documents as mock results
-      message: 'Similarity search not yet implemented. Showing sample results.'
-    };
+    if (docs.length === 0) {
+      return {
+        success: false,
+        error: 'No document summaries available for similarity search',
+        results: []
+      };
+    }
+    
+    // Call LLM Foundry similarity API
+    const response = await fetch('https://llmfoundry.straive.com/similarity', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}:regIntel`
+      },
+      body: JSON.stringify({
+        docs: docs,
+        topics: [query]
+      })
+    });
+    
+    if (!response.ok) {
+      throw new Error(`API request failed: ${response.status} ${response.statusText}`);
+    }
+    
+    const similarityResults = await response.json();
+    
+    const relevantDocs = [];
+    
+    if (similarityResults && similarityResults.similarity && Array.isArray(similarityResults.similarity)) {
+      // Get documents with similarity scores above threshold (e.g., 0.4)
+      const threshold = 0.5;
+      
+      similarityResults.similarity.forEach((scoreArray, index) => {
+        const score = scoreArray[0]; // Extract score from nested array
+        if (score > threshold && index < filteredDocs.length) {
+          const doc = filteredDocs[index]; // Use direct index lookup
+          relevantDocs.push({
+            ...doc,
+            similarityScore: score
+          });
+        }
+      });
+      
+      // Sort by similarity score (highest first) and limit to top 10
+      relevantDocs.sort((a, b) => b.similarityScore - a.similarityScore);
+      const topResults = relevantDocs.slice(0, 10);
+      generateDocumentSummary(topResults);
+      return {
+        success: true,
+        query: query,
+        results: topResults,
+        totalScanned: docs.length,
+        tokensUsed: similarityResults.tokens
+      };
+    } else {
+      throw new Error('Unexpected API response format');
+    }
+    
   } catch (error) {
     console.error('Error in similarity search:', error);
     return {
@@ -465,25 +491,28 @@ async function handleDocumentSearch() {
   
   try {
     const searchResults = await searchDocumentsSimilarity(query);
-    
     if (searchResults.success) {
       // Display search results
       displayResults(searchResults.results);
-      document.getElementById('noOfElementsFound').innerHTML = 
-        `Documents Found: ${searchResults.results.length} (Similarity Search: "${query}")`;
+      const resultsCount = searchResults.results.length;
+      const totalScanned = searchResults.totalScanned || 'unknown';
       
-      // Show message if it's a mock response
-      if (searchResults.message) {
+      document.getElementById('noOfElementsFound').innerHTML = 
+        `Documents Found: ${resultsCount} of ${totalScanned}`;
+      
+      // Add similarity scores info if available
+      if (resultsCount > 0 && searchResults.results[0].similarityScore !== undefined) {
         const resultsContainer = document.getElementById('results');
-        const messageDiv = document.createElement('div');
-        messageDiv.className = 'alert alert-info mb-3';
-        messageDiv.innerHTML = `<i class="bi bi-info-circle me-2"></i>${searchResults.message}`;
-        resultsContainer.insertBefore(messageDiv, resultsContainer.firstChild);
+        const infoDiv = document.createElement('div');
+        infoDiv.className = 'alert alert-info mb-3';
+        infoDiv.innerHTML = `<i class="bi bi-info-circle me-2"></i>Results ranked by semantic similarity. Scores range from ${Math.min(...searchResults.results.map(r => r.similarityScore)).toFixed(2)} to ${Math.max(...searchResults.results.map(r => r.similarityScore)).toFixed(2)}.`;
+        resultsContainer.insertBefore(infoDiv, resultsContainer.firstChild);
       }
     } else {
       // Handle error
       document.getElementById('results').innerHTML = 
         `<div class="alert alert-danger">Search failed: ${searchResults.error}</div>`;
+      document.getElementById('noOfElementsFound').innerHTML = '';
     }
   } catch (error) {
     console.error('Search error:', error);
@@ -500,13 +529,6 @@ async function handleDocumentSearch() {
 document.getElementById('searchBtn').addEventListener('click', filterResults);
 document.getElementById('clearBtn').addEventListener('click', clearAllFilters);
 document.getElementById('documentSearchBtn').addEventListener('click', handleDocumentSearch);
-
-// Add Enter key support for document search
-document.getElementById('documentSearchInput').addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
-    handleDocumentSearch();
-  }
-});
 
 // Begin button handler
 document.addEventListener('DOMContentLoaded', function() {
