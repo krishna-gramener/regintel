@@ -303,9 +303,110 @@ function showMainApp() {
   }
 }
 
+// Placeholder function for similarity API call
+async function searchDocumentsSimilarity(query) {
+  // TODO: Implement LLM Foundry similarity API call
+  // This function will send the query and all documents to the similarity API
+  // and return the most relevant documents based on semantic similarity
+  
+  console.log('Searching documents with query:', query);
+  console.log('Total documents to search:', pdfData.length);
+  
+  try {
+    // Placeholder for actual API call
+    // const response = await fetch('LLM_FOUNDRY_SIMILARITY_API_ENDPOINT', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'Authorization': 'Bearer YOUR_API_KEY'
+    //   },
+    //   body: JSON.stringify({
+    //     query: query,
+    //     documents: pdfData,
+    //     top_k: 10 // Number of most similar documents to return
+    //   })
+    // });
+    // 
+    // const results = await response.json();
+    // return results.similar_documents;
+    
+    // For now, return a mock response
+    return {
+      success: true,
+      query: query,
+      results: pdfData.slice(0, 5), // Return first 5 documents as mock results
+      message: 'Similarity search not yet implemented. Showing sample results.'
+    };
+  } catch (error) {
+    console.error('Error in similarity search:', error);
+    return {
+      success: false,
+      error: error.message,
+      results: []
+    };
+  }
+}
+
+// Handle document search
+async function handleDocumentSearch() {
+  const searchInput = document.getElementById('documentSearchInput');
+  const searchBtn = document.getElementById('documentSearchBtn');
+  const query = searchInput.value.trim();
+  
+  if (!query) {
+    alert('Please enter a search query.');
+    return;
+  }
+  
+  // Show loading state
+  const originalBtnText = searchBtn.innerHTML;
+  searchBtn.disabled = true;
+  searchBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  
+  try {
+    const searchResults = await searchDocumentsSimilarity(query);
+    
+    if (searchResults.success) {
+      // Display search results
+      displayResults(searchResults.results);
+      document.getElementById('noOfElementsFound').innerHTML = 
+        `Documents Found: ${searchResults.results.length} (Similarity Search: "${query}")`;
+      
+      // Show message if it's a mock response
+      if (searchResults.message) {
+        const resultsContainer = document.getElementById('results');
+        const messageDiv = document.createElement('div');
+        messageDiv.className = 'alert alert-info mb-3';
+        messageDiv.innerHTML = `<i class="bi bi-info-circle me-2"></i>${searchResults.message}`;
+        resultsContainer.insertBefore(messageDiv, resultsContainer.firstChild);
+      }
+    } else {
+      // Handle error
+      document.getElementById('results').innerHTML = 
+        `<div class="alert alert-danger">Search failed: ${searchResults.error}</div>`;
+    }
+  } catch (error) {
+    console.error('Search error:', error);
+    document.getElementById('results').innerHTML = 
+      `<div class="alert alert-danger">An error occurred during search. Please try again.</div>`;
+  } finally {
+    // Restore button state
+    searchBtn.disabled = false;
+    searchBtn.innerHTML = originalBtnText;
+  }
+}
+
 // Button handlers
 document.getElementById('searchBtn').addEventListener('click', filterResults);
 document.getElementById('clearBtn').addEventListener('click', clearAllFilters);
+document.getElementById('documentSearchBtn').addEventListener('click', handleDocumentSearch);
+
+// Add Enter key support for document search
+document.getElementById('documentSearchInput').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    handleDocumentSearch();
+  }
+});
 
 // Begin button handler
 document.addEventListener('DOMContentLoaded', function() {
