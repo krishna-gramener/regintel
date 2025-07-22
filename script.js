@@ -290,9 +290,27 @@ function clearAllFilters() {
   updateSelectedFiltersDisplay();
 }
 
+// Landing page functionality
+function showMainApp() {
+  const landingPage = document.getElementById('landingPage');
+  const mainApp = document.getElementById('mainApp');
+  
+  if (landingPage && mainApp) {
+    landingPage.classList.add('d-none');
+    mainApp.classList.remove('d-none');
+    // Initial load
+    loadPDFData();
+  }
+}
+
 // Button handlers
 document.getElementById('searchBtn').addEventListener('click', filterResults);
 document.getElementById('clearBtn').addEventListener('click', clearAllFilters);
 
-// Initial load
-loadPDFData();
+// Begin button handler
+document.addEventListener('DOMContentLoaded', function() {
+  const beginBtn = document.getElementById('beginBtn');
+  if (beginBtn) {
+    beginBtn.addEventListener('click', showMainApp);
+  }
+});

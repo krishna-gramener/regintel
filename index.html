@@ -7,6 +7,7 @@
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
     <!-- D3.js and Sankey Plugin -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
@@ -112,7 +113,46 @@
     <div class="container my-5">
       <h2 class="mb-4 text-center">RegIntel</h2>
 
-      <!-- Filters -->
+      <!-- Landing Page -->
+      <div class="row justify-content-center" id="landingPage">
+        <div class="col-lg-8 col-xl-7">
+          <div class="card border-0 shadow-sm mb-5">
+            <div class="card-body p-5">
+              <p class="text-muted mb-4">
+                A comprehensive FDA regulatory document viewer and intelligence platform for exploring pharmaceutical and medical device submissions:
+              </p>
+              
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <strong>Advanced Filtering:</strong> Multi-select filtering by company, therapeutic area, issue categories, subcategories, dates, and outcomes
+                </li>
+                <li class="mb-3">
+                  <strong>Interactive Sankey Diagrams:</strong> Visualize regulatory data flow from companies through therapeutic areas, categories, subcategories to years
+                </li>
+                <li class="mb-3">
+                  <strong>60+ Pharmaceutical Companies:</strong> Comprehensive database covering major pharmaceutical and medical device companies with FDA submissions
+                </li>
+                <li class="mb-3">
+                  <strong>Categorized Issue Analysis:</strong> Detailed categorization of regulatory issues across 15 therapeutic areas with subcategory breakdowns
+                </li>
+                <li class="mb-3">
+                  <strong>Direct Document Access:</strong> Click-through access to original FDA regulatory documents with metadata and submission outcomes
+                </li>
+              </ul>
+              
+              <div class="text-center mt-4">
+                <button class="btn btn-primary btn-lg px-4 py-2" id="beginBtn">
+                  <i class="bi bi-play-fill"></i>Begin Exploration
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Application Content -->
+      <div class="d-none" id="mainApp">
+        <!-- Filters -->
       <div class="row g-3 mb-4">
         <!-- Company Filter -->
         <div class="col-md-4">
@@ -250,9 +290,10 @@
         <div id="sankey-chart" class="overflow-auto" style="width: 100%; min-width: 1600px;"></div>
       </div>
 
-      <p id="noOfElementsFound" class="text-center text-muted"></p>
-      <!-- Results -->
-      <div id="results" class="list-group"></div>
+        <p id="noOfElementsFound" class="text-center text-muted"></p>
+        <!-- Results -->
+        <div id="results" class="list-group"></div>
+      </div>
     </div>
     <script src="script.js" type="module"></script>
   </body>
