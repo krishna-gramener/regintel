@@ -203,6 +203,7 @@ function populateFilters(data) {
 
     // Initialize dropdown text
     updateDropdownText(id);
+    // updateSankey(data);
   });
 }
 
@@ -278,10 +279,11 @@ window.filterResults = function filterResults() {
   
   // Generate summary for filtered results
   generateDocumentSummary(filtered);
+  // updateSankey(filtered);
 }
 
 // Generate LLM summary for filtered documents
-async function generateDocumentSummary(filteredResults) {
+async function generateDocumentSummary(filteredResults, userQuery = null) {
   
   const summarySection = document.getElementById('summarySection');
   const summaryLoading = document.getElementById('summaryLoading');
@@ -299,10 +301,24 @@ async function generateDocumentSummary(filteredResults) {
   summaryContent.innerHTML = '';
   
   try {
-    // Collect summaries from filtered documents
+    // Collect all document details for comprehensive analysis
     const documentSummaries = filteredResults
       .filter(doc => doc.summary && doc.summary.trim())
-      .map(doc => `Company: ${doc.companyName}\n ${doc.fileName?"Document: " + doc.fileName:""}\nSummary: ${doc.summary}`);
+      .map(doc => {
+        const issueDetails = doc.issueCategories?.map(cat => {
+          const subcats = cat.subcategories?.length > 0 ? ` (${cat.subcategories.join(', ')})` : '';
+          return `${cat.category}${subcats}`;
+        }).join('; ') || 'No specific issues listed';
+        
+        return `Company: ${doc.companyName}
+Drug: ${doc.drugName || 'N/A'}
+Indication: ${doc.indication}
+Outcome: ${doc.outcome}
+Date: ${doc.month} ${doc.year}
+Document: ${doc.pdfName || 'N/A'}
+Issue Categories: ${issueDetails}
+Summary: ${doc.summary}`;
+      });
     
     if (documentSummaries.length === 0) {
       summaryContent.innerHTML = '<p class="text-muted">No document summaries available for the filtered results.</p>';
@@ -310,11 +326,14 @@ async function generateDocumentSummary(filteredResults) {
       return;
     }
     
-    const systemPrompt = `You are an expert regulatory affairs analyst. You will be provided with summaries of FDA regulatory documents (Complete Response Letters, Warning Letters, etc.). Your task is to create a comprehensive, well-structured summary
+    const systemPrompt = `You are an expert regulatory affairs analyst. You will be provided with detailed information about FDA regulatory documents (Complete Response Letters, Warning Letters, etc.). Your task is to create a comprehensive, well-structured analysis.
 
-Provide a clear, professional summary that would be valuable for regulatory professionals. Use bullet points and clear headings where appropriate.Make sure the headings are not very big`;
+${userQuery ? `The user has asked: "${userQuery}"
+Please focus your analysis on addressing this question while providing comprehensive insights.` : ''}
+
+Provide a clear, professional analysis that would be valuable for regulatory professionals. Use bullet points and clear headings where appropriate. Make sure the headings are not very big. Include insights about patterns, trends, and key regulatory issues.`;
     
-    const userMessage = `Please analyze and summarize the following ${documentSummaries.length} FDA regulatory document summaries:\n\n${documentSummaries.join('\n\n---\n\n')}`;
+    const userMessage = `Please analyze the following FDA regulatory documents with complete details:\n\n${documentSummaries.join('\n\n---\n\n')}\n\n${userQuery ? `\nSpecifically address this question: "${userQuery}"` : ''}`;
     
     const summary = await callLLM(systemPrompt, userMessage);
     
@@ -400,9 +419,17 @@ function showMainApp() {
 async function searchDocumentsSimilarity(query) {
   
   try {
-    // Prepare documents for similarity search - use summaries for better semantic matching
+    // Prepare documents for similarity search - include all document details
     const filteredDocs = pdfData.filter(doc => doc.summary && doc.summary.trim());
-    const docs = filteredDocs.map(doc => doc.companyName+' ' + doc.year+' ' + doc.month+' ' + doc.indication+' ' + doc.summary);
+    const docs = filteredDocs.map(doc => {
+      // Include all available document details for better semantic matching
+      const issueDetails = doc.issueCategories?.map(cat => {
+        const subcats = cat.subcategories?.length > 0 ? ` (${cat.subcategories.join(', ')})` : '';
+        return `${cat.category}${subcats}`;
+      }).join('; ') || '';
+      
+      return `Company: ${doc.companyName} \n Drug: ${doc.drugName ||'N/A'} \n Indication: ${doc.indication} \n Outcome: ${doc.outcome} \n Date: ${doc.month} ${doc.year} \n Issues: ${issueDetails} \n Summary: ${doc.summary}`;
+    });
     
     if (docs.length === 0) {
       return {
@@ -420,6 +447,7 @@ async function searchDocumentsSimilarity(query) {
         'Authorization': `Bearer ${token}:regIntel`
       },
       body: JSON.stringify({
+        model:'text-embedding-3-large',
         docs: docs,
         topics: [query]
       })
@@ -451,7 +479,7 @@ async function searchDocumentsSimilarity(query) {
       // Sort by similarity score (highest first) and limit to top 10
       relevantDocs.sort((a, b) => b.similarityScore - a.similarityScore);
       const topResults = relevantDocs.slice(0, 10);
-      generateDocumentSummary(topResults);
+      generateDocumentSummary(topResults, query);
       return {
         success: true,
         query: query,
@@ -491,6 +519,7 @@ async function handleDocumentSearch() {
   
   try {
     const searchResults = await searchDocumentsSimilarity(query);
+    console.log(searchResults);
     if (searchResults.success) {
       // Display search results
       displayResults(searchResults.results);

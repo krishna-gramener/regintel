@@ -15,32 +15,32 @@ export function updateSankey(data) {
 
   // Define columns and initialize Sets for each type
   const uniqueValues = {
-    companies: new Set(),
-    indications: new Set(),
     categories: new Set(),
     subcategories: new Set(),
-    years: new Set()
+    indications: new Set(),
+    years: new Set(),
+    companies: new Set()
   };
   const links = [];
 
   // Process data
   data.forEach(d => {
     uniqueValues.companies.add(d.companyName);
-    uniqueValues.indications.add(d.indication);
+    uniqueValues.indications.add(d.indication || 'Not Specified');
     uniqueValues.years.add(d.year.toString());
-
-    addOrUpdateLink(links, `company-${d.companyName}`, `indication-${d.indication}`);
 
     d.issueCategories?.forEach(cat => {
       if (cat?.category) {
         uniqueValues.categories.add(cat.category);
-        addOrUpdateLink(links, `indication-${d.indication}`, `category-${cat.category}`);
 
         cat.subcategories?.forEach(sub => {
           if (sub) {
             uniqueValues.subcategories.add(sub);
+            // New flow: category → subcategory → indication (therapeutic area) → year → company
             addOrUpdateLink(links, `category-${cat.category}`, `subcategory-${sub}`);
-            addOrUpdateLink(links, `subcategory-${sub}`, `year-${d.year}`);
+            addOrUpdateLink(links, `subcategory-${sub}`, `indication-${d.indication || 'Not Specified'}`);
+            addOrUpdateLink(links, `indication-${d.indication || 'Not Specified'}`, `year-${d.year}`);
+            addOrUpdateLink(links, `year-${d.year}`, `company-${d.companyName}`);
           }
         });
       }
@@ -49,11 +49,11 @@ export function updateSankey(data) {
 
   // Create nodes
   const nodeTypes = [
-    { type: 'company', values: uniqueValues.companies },
-    { type: 'indication', values: uniqueValues.indications },
     { type: 'category', values: uniqueValues.categories },
     { type: 'subcategory', values: uniqueValues.subcategories },
-    { type: 'year', values: uniqueValues.years }
+    { type: 'indication', values: uniqueValues.indications },
+    { type: 'year', values: uniqueValues.years },
+    { type: 'company', values: uniqueValues.companies }
   ];
   
   const nodes = nodeTypes.flatMap(({ type, values }, column) => 
@@ -190,11 +190,11 @@ export function updateSankey(data) {
 
 function getNodeColor(type) {
   const colors = {
-    company: "#4e79a7",  // Blue for companies
-    indication: "#59a14f",  // Green for therapeutic areas
     category: "#f28e2c",  // Orange for categories
     subcategory: "#e15759",  // Red for subcategories
+    indication: "#59a14f",  // Green for indications (therapeutic areas)
     year: "#b07aa1",  // Purple for years
+    company: "#4e79a7",  // Blue for companies
   };
   return colors[type] || "#999";
 }
@@ -216,11 +216,11 @@ function handleSankeyClick(event, d) {
 
   // Map node types to filter IDs
   const filterMap = {
-    company: 'companyFilter',
-    indication: 'indicationFilter',
     category: 'categoryFilter',
     subcategory: 'subcategoryFilter',
-    year: 'yearFilter'
+    indication: 'indicationFilter',
+    year: 'yearFilter',
+    company: 'companyFilter'
   };
 
   // Get the filter ID for the clicked node
@@ -235,7 +235,7 @@ function handleSankeyClick(event, d) {
   const isSelected = selectedValues?.has(value);
 
   // Clear only filters that come after the clicked node's type in the flow
-  const filterOrder = ['companyFilter', 'indicationFilter', 'categoryFilter', 'subcategoryFilter', 'yearFilter'];
+  const filterOrder = ['categoryFilter', 'subcategoryFilter', 'indicationFilter', 'yearFilter', 'companyFilter'];
   const clickedFilterIndex = filterOrder.indexOf(filterId);
   
   // Reset downstream filters and their selected values
