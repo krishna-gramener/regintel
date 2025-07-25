@@ -1,7 +1,7 @@
 import { updateSankey} from './sankey.js';
 
 let pdfData = [];
-let token = null;
+let token = '';
 const filters = ['companyFilter', 'categoryFilter', 'subcategoryFilter', 'indicationFilter', 'monthFilter', 'yearFilter'];
 
 // LLM API helper functions
@@ -11,7 +11,7 @@ async function init() {
     const data = await response.json();
     token = data.token;
   } catch (error) {
-    console.error('Token initialization error:', error);
+    console.error('Token initialization Nerror:', error);
   }
 }
 
@@ -40,6 +40,89 @@ async function callLLM(systemPrompt, userMessage) {
     console.error(error);
     throw new Error(`API call failed: ${error.message}`);
   }
+}
+
+// Extract keywords from user query using LLM
+async function extractKeywords(userQuery) {
+  const systemPrompt = `You are a keyword extraction assistant for regulatory documents. 
+Extract the most relevant keywords and phrases from the user's query that would be useful for searching through FDA regulatory documents.
+Return only a JSON array of keywords/phrases, nothing else. Focus on:
+- Medical/pharmaceutical terms
+- Company names
+- Drug names
+- Regulatory terms
+- Issue categories
+- Therapeutic areas
+
+Example: ["manufacturing", "quality control", "labeling", "clinical deficiencies"]`;
+  
+  try {
+    const response = await callLLM(systemPrompt, userQuery);
+    // Parse the JSON response
+    const keywords = JSON.parse(response.trim());
+    return Array.isArray(keywords) ? keywords : [];
+  } catch (error) {
+    console.error('Keyword extraction error:', error);
+    // Fallback: return simple word extraction
+    return userQuery.toLowerCase().split(/\s+/).filter(word => word.length > 2);
+  }
+}
+
+// Search documents using Fuse.js with extracted keywords
+function searchWithFuse(keywords, documents) {
+  // Configure Fuse.js options for searching through document content
+  console.log(documents)
+  const fuseOptions = {
+    keys: [
+      { name: 'pdfName', weight: 0.3 },
+      { name: 'companyName', weight: 0.2 },
+      { name: 'drugName', weight: 0.2 },
+      { name: 'indication', weight: 0.2 },
+      { name: 'outcome', weight: 0.1 },
+      { name: 'issueCategories.category', weight: 0.15 },
+      { name: 'issueCategories.subcategories', weight: 0.1 }
+    ],
+    threshold: 0.3, // Lower threshold for more matches
+    includeScore: true,
+    includeMatches: true,
+    minMatchCharLength: 2,
+    ignoreLocation: true
+  };
+
+  const fuse = new Fuse(documents, fuseOptions);
+  const allResults = new Map();
+
+  // Search for each keyword and combine results
+  keywords.forEach(keyword => {
+    const results = fuse.search(keyword);
+    results.forEach(result => {
+      // Only include documents with score < 0.6(better matches)
+      if (result.score < 0.6) {
+        const docId = result.item.pdfName;
+        if (!allResults.has(docId)) {
+          allResults.set(docId, {
+            item: result.item,
+            score: result.score,
+            matches: result.matches || [],
+            matchedKeywords: [keyword]
+          });
+        } else {
+          // Combine scores (lower is better in Fuse.js)
+          const existing = allResults.get(docId);
+          existing.score = Math.min(existing.score, result.score);
+          existing.matches = [...existing.matches, ...(result.matches || [])];
+          existing.matchedKeywords.push(keyword);
+        }
+      }
+    });
+  });
+
+  // Convert map to array and sort by score (lower is better)
+  const combinedResults = Array.from(allResults.values())
+    .sort((a, b) => a.score - b.score)
+    .slice(0, 20); // Limit to top 20 results
+
+  return combinedResults;
 }
 
 // Track selected values for each filter
@@ -102,7 +185,7 @@ async function loadPDFData() {
     pdfData = await res.json();
     populateFilters(pdfData);
     displayResults(pdfData);
-    updateSankey(pdfData);
+    // updateSankey(pdfData);
   } catch (error) {
     console.error('Error during initialization:', error);
     document.getElementById('results').innerHTML = `
@@ -415,93 +498,7 @@ function showMainApp() {
   }
 }
 
-// Similarity search using LLM Foundry API
-async function searchDocumentsSimilarity(query) {
-  
-  try {
-    // Prepare documents for similarity search - include all document details
-    const filteredDocs = pdfData.filter(doc => doc.summary && doc.summary.trim());
-    const docs = filteredDocs.map(doc => {
-      // Include all available document details for better semantic matching
-      const issueDetails = doc.issueCategories?.map(cat => {
-        const subcats = cat.subcategories?.length > 0 ? ` (${cat.subcategories.join(', ')})` : '';
-        return `${cat.category}${subcats}`;
-      }).join('; ') || '';
-      
-      return `Company: ${doc.companyName} \n Drug: ${doc.drugName ||'N/A'} \n Indication: ${doc.indication} \n Outcome: ${doc.outcome} \n Date: ${doc.month} ${doc.year} \n Issues: ${issueDetails} \n Summary: ${doc.summary}`;
-    });
-    
-    if (docs.length === 0) {
-      return {
-        success: false,
-        error: 'No document summaries available for similarity search',
-        results: []
-      };
-    }
-    
-    // Call LLM Foundry similarity API
-    const response = await fetch('https://llmfoundry.straive.com/similarity', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}:regIntel`
-      },
-      body: JSON.stringify({
-        model:'text-embedding-3-large',
-        docs: docs,
-        topics: [query]
-      })
-    });
-    
-    if (!response.ok) {
-      throw new Error(`API request failed: ${response.status} ${response.statusText}`);
-    }
-    
-    const similarityResults = await response.json();
-    
-    const relevantDocs = [];
-    
-    if (similarityResults && similarityResults.similarity && Array.isArray(similarityResults.similarity)) {
-      // Get documents with similarity scores above threshold (e.g., 0.4)
-      const threshold = 0.5;
-      
-      similarityResults.similarity.forEach((scoreArray, index) => {
-        const score = scoreArray[0]; // Extract score from nested array
-        if (score > threshold && index < filteredDocs.length) {
-          const doc = filteredDocs[index]; // Use direct index lookup
-          relevantDocs.push({
-            ...doc,
-            similarityScore: score
-          });
-        }
-      });
-      
-      // Sort by similarity score (highest first) and limit to top 10
-      relevantDocs.sort((a, b) => b.similarityScore - a.similarityScore);
-      const topResults = relevantDocs.slice(0, 10);
-      generateDocumentSummary(topResults, query);
-      return {
-        success: true,
-        query: query,
-        results: topResults,
-        totalScanned: docs.length,
-        tokensUsed: similarityResults.tokens
-      };
-    } else {
-      throw new Error('Unexpected API response format');
-    }
-    
-  } catch (error) {
-    console.error('Error in similarity search:', error);
-    return {
-      success: false,
-      error: error.message,
-      results: []
-    };
-  }
-}
-
-// Handle document search
+// Handle document search using keyword extraction + Fuse.js approach
 async function handleDocumentSearch() {
   const searchInput = document.getElementById('documentSearchInput');
   const searchBtn = document.getElementById('documentSearchBtn');
@@ -515,38 +512,55 @@ async function handleDocumentSearch() {
   // Show loading state
   const originalBtnText = searchBtn.innerHTML;
   searchBtn.disabled = true;
-  searchBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching...';
+  searchBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Extracting keywords...';
   
   try {
-    const searchResults = await searchDocumentsSimilarity(query);
-    console.log(searchResults);
-    if (searchResults.success) {
-      // Display search results
-      displayResults(searchResults.results);
-      const resultsCount = searchResults.results.length;
-      const totalScanned = searchResults.totalScanned || 'unknown';
-      
-      document.getElementById('noOfElementsFound').innerHTML = 
-        `Documents Found: ${resultsCount} of ${totalScanned}`;
-      
-      // Add similarity scores info if available
-      if (resultsCount > 0 && searchResults.results[0].similarityScore !== undefined) {
-        const resultsContainer = document.getElementById('results');
-        const infoDiv = document.createElement('div');
-        infoDiv.className = 'alert alert-info mb-3';
-        infoDiv.innerHTML = `<i class="bi bi-info-circle me-2"></i>Results ranked by semantic similarity. Scores range from ${Math.min(...searchResults.results.map(r => r.similarityScore)).toFixed(2)} to ${Math.max(...searchResults.results.map(r => r.similarityScore)).toFixed(2)}.`;
-        resultsContainer.insertBefore(infoDiv, resultsContainer.firstChild);
-      }
-    } else {
-      // Handle error
-      document.getElementById('results').innerHTML = 
-        `<div class="alert alert-danger">Search failed: ${searchResults.error}</div>`;
-      document.getElementById('noOfElementsFound').innerHTML = '';
+    // Step 1: Extract keywords from user query using LLM
+    const keywords = await extractKeywords(query);
+    
+    if (keywords.length === 0) {
+      throw new Error('No keywords could be extracted from your query.');
     }
+    
+    // Update loading message
+    searchBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Searching documents...';
+    
+    // Step 2: Use Fuse.js to search through document content with keywords
+    const fuseResults = searchWithFuse(keywords, pdfData);
+    
+    if (fuseResults.length === 0) {
+      document.getElementById('results').innerHTML = 
+        `<div class="alert alert-warning">No documents found matching the keywords: ${keywords.join(', ')}</div>`;
+      document.getElementById('noOfElementsFound').innerHTML = 'Documents Found: 0';
+      return;
+    }
+    
+    // Step 3: Extract just the document items for display and summary
+    const matchedDocuments = fuseResults.map(result => ({
+      ...result.item,
+      fuseScore: result.score,
+      matchedKeywords: result.matchedKeywords,
+      matches: result.matches
+    }));
+    
+    // Update loading message
+    searchBtn.innerHTML = '<i class="bi bi-hourglass-split me-1"></i>Generating summary...';
+    
+    // Step 4: Generate summary of matched documents
+    await generateDocumentSummary(matchedDocuments, query);
+    
+    // Step 5: Display results
+    displayResults(matchedDocuments);
+    
+    // Update results count
+    document.getElementById('noOfElementsFound').innerHTML = 
+      `Documents Found: ${matchedDocuments.length} `;
+    
   } catch (error) {
     console.error('Search error:', error);
     document.getElementById('results').innerHTML = 
-      `<div class="alert alert-danger">An error occurred during search. Please try again.</div>`;
+      `<div class="alert alert-danger">Search failed: ${error.message}</div>`;
+    document.getElementById('noOfElementsFound').innerHTML = '';
   } finally {
     // Restore button state
     searchBtn.disabled = false;

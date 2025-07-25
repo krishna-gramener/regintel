@@ -13,6 +13,8 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Fuse.js for fuzzy search -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
     <style>
       .sankey-container {
         width: 100%;
@@ -281,7 +283,7 @@
       </div>
 
       <!-- Sankey Diagram -->
-      <div class="sankey-container mb-4">
+      <div class="sankey-container mb-4 d-none">
         <div class="sankey-legend mb-3">
           <span><i class="legend-dot company"></i> Companies</span>
           <span><i class="legend-dot indication"></i> Therapeutic Areas</span>
