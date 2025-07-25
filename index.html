@@ -319,17 +319,23 @@
           <div class="card border-primary">
             <div class="card-header bg-primary text-white">
               <h6 class="mb-0">
-                <i class="bi bi-magic"></i>Summary 
+                <button class="btn btn-link text-white text-decoration-none p-0 d-flex align-items-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#summaryCollapse" aria-expanded="true" aria-controls="summaryCollapse">
+                  <i class="bi bi-magic me-2"></i>
+                  <span>Summary</span>
+                  <i class="bi bi-chevron-down ms-auto" id="summaryChevron"></i>
+                </button>
               </h6>
             </div>
-            <div class="card-body">
-              <div id="summaryLoading" class="d-none text-center py-3">
-                <div class="spinner-grow spinner-grow-sm text-primary me-2" role="status">
-                  <span class="visually-hidden">Loading...</span>
+            <div class="collapse show" id="summaryCollapse">
+              <div class="card-body">
+                <div id="summaryLoading" class="d-none text-center py-3">
+                  <div class="spinner-grow spinner-grow-sm text-primary me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                  Generating summary...
                 </div>
-                Generating summary...
+                <div id="summaryContent" class="text-muted"></div>
               </div>
-              <div id="summaryContent" class="text-muted"></div>
             </div>
           </div>
         </div>

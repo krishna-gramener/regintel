@@ -71,7 +71,6 @@ Example: ["manufacturing", "quality control", "labeling", "clinical deficiencies
 // Search documents using Fuse.js with extracted keywords
 function searchWithFuse(keywords, documents) {
   // Configure Fuse.js options for searching through document content
-  console.log(documents)
   const fuseOptions = {
     keys: [
       { name: 'pdfName', weight: 0.3 },
@@ -578,5 +577,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const beginBtn = document.getElementById('beginBtn');
   if (beginBtn) {
     beginBtn.addEventListener('click', showMainApp);
+  }
+  
+  // Handle summary collapse chevron rotation
+  const summaryCollapse = document.getElementById('summaryCollapse');
+  const summaryChevron = document.getElementById('summaryChevron');
+  
+  if (summaryCollapse && summaryChevron) {
+    summaryCollapse.addEventListener('show.bs.collapse', function() {
+      summaryChevron.classList.remove('bi-chevron-right');
+      summaryChevron.classList.add('bi-chevron-down');
+    });
+    
+    summaryCollapse.addEventListener('hide.bs.collapse', function() {
+      summaryChevron.classList.remove('bi-chevron-down');
+      summaryChevron.classList.add('bi-chevron-right');
+    });
   }
 });
