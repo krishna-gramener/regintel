@@ -73,13 +73,15 @@ function searchWithFuse(keywords, documents) {
   // Configure Fuse.js options for searching through document content
   const fuseOptions = {
     keys: [
-      { name: 'pdfName', weight: 0.3 },
-      { name: 'companyName', weight: 0.2 },
-      { name: 'drugName', weight: 0.2 },
+      { name: 'companyName', weight: 0.25 },
+      { name: 'drugName', weight: 0.3 },
       { name: 'indication', weight: 0.2 },
-      { name: 'outcome', weight: 0.1 },
-      { name: 'issueCategories.category', weight: 0.15 },
-      { name: 'issueCategories.subcategories', weight: 0.1 }
+      { name: 'outcome', weight: 0.15 },
+      { name: 'issueCategories.category', weight: 0.2 },
+      { name: 'issueCategories.subcategories', weight: 0.15 },
+      { name: 'month', weight: 0.1 },
+      { name: 'year', weight: 0.1 },
+      { name: 'summary', weight: 0.35 }
     ],
     threshold: 0.3, // Lower threshold for more matches
     includeScore: true,
@@ -120,7 +122,6 @@ function searchWithFuse(keywords, documents) {
   const combinedResults = Array.from(allResults.values())
     .sort((a, b) => a.score - b.score)
     .slice(0, 20); // Limit to top 20 results
-
   return combinedResults;
 }
 
