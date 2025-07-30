@@ -2,7 +2,7 @@ name: Auto Screenshot After GitHub Pages Deployment
 
 on:
   push:
-    branches: ["*"]
+    branches: [main]
 
 jobs:
   wait-for-pages:
@@ -39,14 +39,14 @@ jobs:
               await new Promise(res => setTimeout(res, interval));
             }
 
-  generate-screenshots:
+  generate-screenshot:
     needs: wait-for-pages
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -59,13 +59,27 @@ jobs:
           npm install
           npx playwright install --with-deps
 
-      - name: Run screenshot script
+      - name: Start local server
+        run: |
+          npx serve . -l 5000 &
+        env:
+          NODE_ENV: production
+
+      - name: Wait for server
+        run: |
+          for i in {1..10}; do
+            curl -s http://localhost:5000 && break
+            echo "Waiting for localhost to start..."
+            sleep 2
+          done
+
+      - name: Generate screenshot
         run: node screenshot.js
 
-      - name: Commit and push screenshots
+      - name: Commit screenshot
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add *.webp
-          git commit -m "📸 Auto-generated screenshots" || echo "No changes"
+          git add screenshot.webp
+          git commit -m "📸 Updated full-page screenshot" || echo "No changes to commit"
           git push
