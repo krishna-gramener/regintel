@@ -1,0 +1,19 @@
+{
+  "name": "regintel",
+  "version": "1.0.0",
+  "description": "A simple web app to view and filter FDA regulatory PDF documents by company, drug, date, and issue categories.",
+  "main": "sankey.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.54.1",
+    "sharp": "^0.34.3"
+  }
+}
