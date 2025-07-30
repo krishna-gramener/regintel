@@ -28,7 +28,7 @@ function deleteOldWebps() {
   const examples = getHtmlFiles();
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.setViewportSize({ width: 800, height: 600 });
+  // Using default viewport (1280x720) for full page screenshots
 
   for (const example of examples) {
     const filePath = `file://${path.resolve(__dirname, `${example}.html`)}`;
@@ -39,7 +39,7 @@ function deleteOldWebps() {
 
     const screenshot = await page.screenshot({
       type: "png",
-      clip: { x: 0, y: 0, width: 800, height: 400 },
+      fullPage: true,
     });
 
     await sharp(screenshot)
