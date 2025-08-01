@@ -2,7 +2,7 @@ name: Auto Screenshot After GitHub Pages Deployment
 
 on:
   push:
-    branches: ["*"]
+    branches: ["main"]
 
 jobs:
   screenshot:
@@ -18,11 +18,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-
-      - name: Install dependencies
-        run: |
-          npm install
-          npx playwright install --with-deps
 
       - name: Run Screenshot Generator
         uses: krishna-gramener/github-screenshots@v1
