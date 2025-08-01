@@ -2,7 +2,7 @@ name: Auto Screenshot After GitHub Pages Deployment
 
 on:
   push:
-    branches: ["main"]
+    branches: ["*"]
 
 jobs:
   screenshot:
