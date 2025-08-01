@@ -49,19 +49,37 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Create screenshots folder if missing
-        run: mkdir -p screenshots
-
-      - name: Take screenshot
-        uses: cloudposse/actions/github/screenshot@main
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          url: "file://${{ github.workspace }}/docs/index.html"
-          output: "screenshots/home.png"
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npx playwright install --with-deps
+
+      - name: Start local server
+        run: |
+          npx serve . -l 5000 &
+        env:
+          NODE_ENV: production
+
+      - name: Wait for server
+        run: |
+          for i in {1..10}; do
+            curl -s http://localhost:5000 && break
+            echo "Waiting for localhost to start..."
+            sleep 2
+          done
+
+      - name: Generate screenshot
+        run: node screenshot.js
 
       - name: Commit screenshot
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add screenshots/home.png
+          git add screenshot.webp
           git commit -m "📸 Updated full-page screenshot" || echo "No changes to commit"
           git push
