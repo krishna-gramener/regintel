@@ -5,42 +5,7 @@ on:
     branches: ["*"]
 
 jobs:
-  wait-for-pages:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Wait for GitHub Pages deployment
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const maxWait = 5 * 60 * 1000;
-            const interval = 10000;
-            const start = Date.now();
-            const { repo, owner } = context.repo;
-
-            async function check() {
-              const deployments = await github.rest.repos.listDeployments({ owner, repo });
-              if (deployments.data.length === 0) return false;
-
-              const latest = deployments.data[0];
-              const statuses = await github.rest.repos.listDeploymentStatuses({
-                owner,
-                repo,
-                deployment_id: latest.id
-              });
-
-              const latestStatus = statuses.data[0];
-              return latestStatus?.state === 'success';
-            }
-
-            while (true) {
-              if (await check()) break;
-              if (Date.now() - start > maxWait) throw new Error("Deployment timeout");
-              console.log("Waiting for GitHub Pages deployment...");
-              await new Promise(res => setTimeout(res, interval));
-            }
-
-  generate-screenshot:
-    needs: wait-for-pages
+  screenshot:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -59,22 +24,11 @@ jobs:
           npm install
           npx playwright install --with-deps
 
-      - name: Start local server
-        run: |
-          npx serve . -l 5000 &
-        env:
-          NODE_ENV: production
-
-      - name: Wait for server
-        run: |
-          for i in {1..10}; do
-            curl -s http://localhost:5000 && break
-            echo "Waiting for localhost to start..."
-            sleep 2
-          done
-
-      - name: Generate screenshot
-        run: node screenshot.js
+      - name: Run Screenshot Generator
+        uses: krishna-gramener/github-screenshots@v1
+        with:
+          url: http://localhost:5000
+          output: screenshot.webp
 
       - name: Commit screenshot
         run: |

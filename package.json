@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "playwright": "^1.54.1",
-    "serve": "^14.2.4",
-    "sharp": "^0.34.3"
-  }
-}
