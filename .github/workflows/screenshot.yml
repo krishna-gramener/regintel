@@ -49,8 +49,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Create screenshots folder if missing
+        run: mkdir -p screenshots
+
       - name: Take screenshot
-        uses: cloudposse-github-actions/screenshot@v0
+        uses: cloudposse/actions/github/screenshot@main
         with:
           url: "file://${{ github.workspace }}/docs/index.html"
           output: "screenshots/home.png"
