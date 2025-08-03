@@ -19,17 +19,12 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: |
-          npm install playwright sharp serve
-          npx playwright install --with-deps chromium
-
       - name: Run Screenshot Generator
         uses: krishna-gramener/github-screenshots@v1.1
         with:
           url: http://localhost:5000
           output: screenshot.webp
-
+          
       - name: Commit screenshot
         run: |
           git config user.name "github-actions"
