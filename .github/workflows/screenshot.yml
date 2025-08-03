@@ -25,7 +25,7 @@ jobs:
           npx playwright install --with-deps chromium
 
       - name: Run Screenshot Generator
-        uses: krishna-gramener/github-screenshots@v1
+        uses: krishna-gramener/github-screenshots@v1.1
         with:
           url: http://localhost:5000
           output: screenshot.webp
