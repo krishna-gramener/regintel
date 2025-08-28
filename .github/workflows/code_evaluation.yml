@@ -3,7 +3,7 @@ name: Code Structure Evaluation
 on:
   # Choose when to run the action
   push:
-    branches: [ '*' ]  # Or any branch you want to monitor
+    branches: [ 'evaluator-github-action' ]  # Or any branch you want to monitor
 
 jobs:
   evaluate:
