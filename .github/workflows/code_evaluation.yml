@@ -26,6 +26,12 @@ jobs:
           # rubric: 'path/to/custom-rubric.yml'
         id: evaluation
       
+      # Step 3: Install dependencies for the action
+      - name: Install Dependencies
+        run: |
+          cd ${{ github.action_path || '.' }}
+          npm ci
+      
       # Step 3: Commit the Result.md file to the repository (optional)
       - name: Commit Result.md
         run: |
