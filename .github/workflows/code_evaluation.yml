@@ -2,7 +2,7 @@ name: Code Structure Evaluation
 
 on:
   push:
-    branches: [ '*' ]  # Adjust as needed
+    branches: [ 'evaluator-github-action' ]  # Adjust as needed
 
   workflow_dispatch:    # Allows manual triggering
 
