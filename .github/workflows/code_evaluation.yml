@@ -22,7 +22,14 @@ jobs:
         shell: bash
         run: |
           cd ${{ github.action_path || '.' }}
-          npm ci
+          # Install dependencies from package.json
+          npm install
+          
+          # Install additional dependencies if needed
+          npm install ${{ env.ADDITIONAL_DEPENDENCIES }}
+        env:
+          NODE_ENV: production
+          ADDITIONAL_DEPENDENCIES: 'glob@^10.2.2 js-yaml@^4.1.0'
       
       # Step 3: Run your Code Structure Evaluator action
       - name: Evaluate Code Structure
