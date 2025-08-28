@@ -19,7 +19,7 @@ jobs:
       
       # Step 2: Run your Code Structure Evaluator action
       - name: Evaluate Code Structure
-        uses: krishna-gramener/viva-evaluation-github-actions@v1.0
+        uses: krishna-gramener/viva-evaluation-github-actions@main
         with:
           api-key: ${{ secrets.OPENAI_API_KEY }}
           # Optional: Specify a custom rubric file
